@@ -15,7 +15,7 @@ def create_material_from_definition(material_definition):
 def create_materials_from_file(file_name):
     # Creates a dictionary of materials from file containing json formatted data
 
-    with open(file_name, "r") as file:
+    with open(file_name, "r", encoding="utf-8") as file:
         data = json.load(file)
 
     # Create material objects from file
@@ -24,10 +24,6 @@ def create_materials_from_file(file_name):
         materials[material_name] = create_material_from_definition(data[material_name])
 
     return materials
-
-
-def process_node(material_name):
-    pass
 
 
 def create_totals_dict():
