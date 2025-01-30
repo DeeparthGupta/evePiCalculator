@@ -1,22 +1,35 @@
 import json
 from Material import Material
 
+
 def create_material_from_definition(material_definition):
+    # Creates a material object from given material dictionary
+
     name = material_definition.name
     components = material_definition.components
     unit_size = material_definition.unit_size
-    
+
     return Material(name, unit_size, components)
 
+
 def create_materials_from_file(file_name):
-    
-    # Read materials and their relationships from file
-    with open(file_name, 'r') as file:
+    # Creates a dictionary of materials from file containing json formatted data
+
+    with open(file_name, "r") as file:
         data = json.load(file)
-    
+
     # Create material objects from file
     materials = {}
-    for material in data.keys():
-        materials[material] = create_material_from_definition(data[material])
-    
+    for material_name in data.keys():
+        materials[material_name] = create_material_from_definition(data[material_name])
+
     return materials
+
+
+def process_node(material_name):
+    pass
+
+
+def create_totals_dict():
+    totals = {}
+    return totals
