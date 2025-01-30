@@ -1,14 +1,27 @@
-from dataclasses import dataclass, field
+from ast import Dict
+from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(frozen=True)
 class Material:
-    material_name: str = None
-    unit_size: int = 0
-    components: dict = field(default_factory=dict)
+    material_name: str
+    unit_size: int
+    components: Dict[str, int]
 
+    @property
     def get_name(self):
         return self.material_name
 
+    @property
     def get_component_names(self):
-        return self.components
+        return self.components.keys()
+
+    @property
+    def get_unit_size(self):
+        return self.unit_size
+
+    def __repr__(self):
+        return (
+            f"Material(name={self.material_name}, unit_size={self.unit_size}, "
+            f"components={self.components!r})"
+        )
