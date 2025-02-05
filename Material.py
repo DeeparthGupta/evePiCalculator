@@ -17,6 +17,10 @@ class Material:
         return self.components.keys()
 
     @property
+    def get_components(self):
+        return self.components
+
+    @property
     def get_unit_size(self):
         return self.unit_size
 
