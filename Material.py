@@ -9,19 +9,19 @@ class Material:
     components: Dict[str, int]
 
     @property
-    def get_name(self):
+    def name(self):
         return self.material_name
 
     @property
-    def get_component_names(self):
+    def component_names(self):
         return self.components.keys()
 
     @property
-    def get_components(self):
+    def components(self):
         return self.components
 
     @property
-    def get_unit_size(self):
+    def unit_size(self):
         return self.unit_size
 
     def __repr__(self):
