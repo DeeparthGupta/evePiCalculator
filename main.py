@@ -20,8 +20,8 @@ def create_materials_from_file(file_name):
         data = json.load(file)
 
     # Create material objects from file
-    materials = dict(None)
-    for material_name in data.keys():
+    materials = dict()
+    for material_name in data:
         materials[material_name] = create_material_from_definition(data[material_name])
 
     return materials
@@ -50,6 +50,11 @@ def subtract_from_quantity(name, quantity):
 
 
 def remove_material(name):
-# Removes a key value pair if it exists in totals
-    if name in material_totals.keys():
+# Removes a key value pair from material_totals if it exists
+
+    if name in material_totals:
         material_totals.pop(name)
+
+def main():
+    pi_materials = create_materials_from_file(None)
+    
