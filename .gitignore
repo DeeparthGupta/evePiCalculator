@@ -1,3 +1,4 @@
 /data/*
 
 !/data/types_with_icons.csv
+!/data/name_id_map.json
