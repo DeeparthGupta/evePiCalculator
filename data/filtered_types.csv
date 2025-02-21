@@ -1,0 +1,84 @@
+typeID,groupID,typeName,marketGroupID,iconID
+44,1034,Enriched Uranium,1335.0,29.0
+2073,1035,Microorganisms,1333.0,10034.0
+2267,1032,Base Metals,1333.0,10024.0
+2268,1033,Aqueous Liquids,1333.0,10012.0
+2270,1032,Noble Metals,1333.0,10025.0
+2272,1032,Heavy Metals,1333.0,10026.0
+2286,1035,Planktic Colonies,1333.0,10035.0
+2287,1035,Complex Organisms,1333.0,10036.0
+2288,1035,Carbon Compounds,1333.0,10037.0
+2305,1035,Autotrophs,1333.0,10038.0
+2306,1032,Non-CS Crystals,1333.0,10027.0
+2307,1032,Felsic Magma,1333.0,10028.0
+2308,1033,Suspended Plasma,1333.0,10013.0
+2309,1033,Ionic Solutions,1333.0,10014.0
+2310,1033,Noble Gas,1333.0,10015.0
+2311,1033,Reactive Gas,1333.0,10016.0
+2312,1034,Supertensile Plastics,1335.0,10057.0
+2317,1034,Oxides,1335.0,10051.0
+2319,1034,Test Cultures,1335.0,10056.0
+2321,1034,Polyaramids,1335.0,10058.0
+2327,1034,Microfiber Shielding,1335.0,10055.0
+2328,1034,Water-Cooled CPU,1335.0,10052.0
+2329,1034,Biocells,1335.0,10054.0
+2344,1040,Condensates,1336.0,10039.0
+2345,1040,Camera Drones,1336.0,10040.0
+2346,1040,Synthetic Synapses,1336.0,10041.0
+2348,1040,Gel-Matrix Biopaste,1336.0,10042.0
+2349,1040,Supercomputers,1336.0,10043.0
+2351,1040,Smartfab Units,1336.0,10044.0
+2352,1040,Nuclear Reactors,1336.0,10045.0
+2354,1040,Neocoms,1336.0,10046.0
+2358,1040,Biotech Research Reports,1336.0,10132.0
+2360,1040,Industrial Explosives,1336.0,10047.0
+2361,1040,Hermetic Membranes,1336.0,10048.0
+2366,1040,Hazmat Detection Systems,1336.0,10049.0
+2367,1040,Cryoprotectant Solution,1336.0,10050.0
+2389,1042,Plasmoids,1334.0,10017.0
+2390,1042,Electrolytes,1334.0,10019.0
+2392,1042,Oxidizing Compound,1334.0,10018.0
+2393,1042,Bacteria,1334.0,10029.0
+2395,1042,Proteins,1334.0,10031.0
+2396,1042,Biofuels,1334.0,10032.0
+2397,1042,Industrial Fibers,1334.0,10033.0
+2398,1042,Reactive Metals,1334.0,10020.0
+2399,1042,Precious Metals,1334.0,10021.0
+2400,1042,Toxic Metals,1334.0,10022.0
+2401,1042,Chiral Structures,1334.0,10023.0
+2463,1034,Nanites,1335.0,10053.0
+2867,1041,Broadcast Node,1337.0,10073.0
+2868,1041,Integrity Response Drones,1337.0,10074.0
+2869,1041,Nano-Factory,1337.0,10075.0
+2870,1041,Organic Mortar Applicators,1337.0,10076.0
+2871,1041,Recursive Computing Module,1337.0,10071.0
+2872,1041,Self-Harmonizing Power Core,1337.0,10078.0
+2875,1041,Sterile Conduits,1337.0,10079.0
+2876,1041,Wetware Mainframe,1337.0,10077.0
+3645,1042,Water,1334.0,1178.0
+3683,1042,Oxygen,1334.0,1183.0
+3689,1034,Mechanical Parts,1335.0,1186.0
+3691,1034,Synthetic Oil,1335.0,1187.0
+3693,1034,Fertilizer,1335.0,1188.0
+3695,1034,Polytextiles,1335.0,1189.0
+3697,1034,Silicate Glass,1335.0,1190.0
+3725,1034,Livestock,1335.0,1205.0
+3775,1034,Viral Agent,1335.0,1199.0
+3779,1042,Biomass,1334.0,10030.0
+3828,1034,Construction Blocks,1335.0,26.0
+9828,1042,Silicon,1334.0,1358.0
+9830,1034,Rocket Fuel,1335.0,1359.0
+9832,1034,Coolant,1335.0,1360.0
+9834,1040,Guidance Systems,1336.0,1361.0
+9836,1034,Consumer Electronics,1335.0,1362.0
+9838,1034,Superconductors,1335.0,1363.0
+9840,1034,Transmitter,1335.0,1364.0
+9842,1034,Miniature Electronics,1335.0,1365.0
+9846,1040,Planetary Vehicles,1336.0,1367.0
+9848,1040,Robotics,1336.0,1368.0
+12836,1040,Transcranial Microcontrollers,1336.0,2038.0
+15317,1034,Genetically Enhanced Livestock,1335.0,2551.0
+17136,1040,Ukomi Superconductors,1336.0,1363.0
+17392,1040,Data Chips,1336.0,2038.0
+17898,1040,High-Tech Transmitters,1336.0,1364.0
+28974,1040,Vaccines,1336.0,1193.0
