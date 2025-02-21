@@ -1,0 +1,84 @@
+,typeID,groupID,typeName,marketGroupID,iconID,level,iconFile
+0,44,1034,Enriched Uranium,1335.0,29.0,2,/ui/texture/icons/6_64_6.png
+1,2073,1035,Microorganisms,1333.0,10034.0,0,/ui/texture/icons/97_64_8.png
+2,2267,1032,Base Metals,1333.0,10024.0,0,/ui/texture/icons/96_64_14.png
+3,2268,1033,Aqueous Liquids,1333.0,10012.0,0,/ui/texture/icons/96_64_2.png
+4,2270,1032,Noble Metals,1333.0,10025.0,0,/ui/texture/icons/96_64_15.png
+5,2272,1032,Heavy Metals,1333.0,10026.0,0,/ui/texture/icons/96_64_16.png
+6,2286,1035,Planktic Colonies,1333.0,10035.0,0,/ui/texture/icons/97_64_9.png
+7,2287,1035,Complex Organisms,1333.0,10036.0,0,/ui/texture/icons/97_64_10.png
+8,2288,1035,Carbon Compounds,1333.0,10037.0,0,/ui/texture/icons/97_64_11.png
+9,2305,1035,Autotrophs,1333.0,10038.0,0,/ui/texture/icons/97_64_12.png
+10,2306,1032,Non-CS Crystals,1333.0,10027.0,0,/ui/texture/icons/97_64_1.png
+11,2307,1032,Felsic Magma,1333.0,10028.0,0,/ui/texture/icons/97_64_2.png
+12,2308,1033,Suspended Plasma,1333.0,10013.0,0,/ui/texture/icons/96_64_3.png
+13,2309,1033,Ionic Solutions,1333.0,10014.0,0,/ui/texture/icons/96_64_4.png
+14,2310,1033,Noble Gas,1333.0,10015.0,0,/ui/texture/icons/96_64_5.png
+15,2311,1033,Reactive Gas,1333.0,10016.0,0,/ui/texture/icons/96_64_6.png
+16,2312,1034,Supertensile Plastics,1335.0,10057.0,2,/ui/texture/icons/98_64_15.png
+17,2317,1034,Oxides,1335.0,10051.0,2,/ui/texture/icons/98_64_9.png
+18,2319,1034,Test Cultures,1335.0,10056.0,2,/ui/texture/icons/98_64_14.png
+19,2321,1034,Polyaramids,1335.0,10058.0,2,/ui/texture/icons/98_64_16.png
+20,2327,1034,Microfiber Shielding,1335.0,10055.0,2,/ui/texture/icons/98_64_13.png
+21,2328,1034,Water-Cooled CPU,1335.0,10052.0,2,/ui/texture/icons/98_64_10.png
+22,2329,1034,Biocells,1335.0,10054.0,2,/ui/texture/icons/98_64_12.png
+23,2344,1040,Condensates,1336.0,10039.0,3,/ui/texture/icons/97_64_13.png
+24,2345,1040,Camera Drones,1336.0,10040.0,3,/ui/texture/icons/97_64_14.png
+25,2346,1040,Synthetic Synapses,1336.0,10041.0,3,/ui/texture/icons/97_64_15.png
+26,2348,1040,Gel-Matrix Biopaste,1336.0,10042.0,3,/ui/texture/icons/97_64_16.png
+27,2349,1040,Supercomputers,1336.0,10043.0,3,/ui/texture/icons/98_64_1.png
+28,2351,1040,Smartfab Units,1336.0,10044.0,3,/ui/texture/icons/98_64_2.png
+29,2352,1040,Nuclear Reactors,1336.0,10045.0,3,/ui/texture/icons/98_64_3.png
+30,2354,1040,Neocoms,1336.0,10046.0,3,/ui/texture/icons/98_64_4.png
+31,2358,1040,Biotech Research Reports,1336.0,10132.0,3,/ui/texture/icons/96_64_1.png
+32,2360,1040,Industrial Explosives,1336.0,10047.0,3,/ui/texture/icons/98_64_5.png
+33,2361,1040,Hermetic Membranes,1336.0,10048.0,3,/ui/texture/icons/98_64_6.png
+34,2366,1040,Hazmat Detection Systems,1336.0,10049.0,3,/ui/texture/icons/98_64_7.png
+35,2367,1040,Cryoprotectant Solution,1336.0,10050.0,3,/ui/texture/icons/98_64_8.png
+36,2389,1042,Plasmoids,1334.0,10017.0,1,/ui/texture/icons/96_64_7.png
+37,2390,1042,Electrolytes,1334.0,10019.0,1,/ui/texture/icons/96_64_9.png
+38,2392,1042,Oxidizing Compound,1334.0,10018.0,1,/ui/texture/icons/96_64_8.png
+39,2393,1042,Bacteria,1334.0,10029.0,1,/ui/texture/icons/97_64_3.png
+40,2395,1042,Proteins,1334.0,10031.0,1,/ui/texture/icons/97_64_5.png
+41,2396,1042,Biofuels,1334.0,10032.0,1,/ui/texture/icons/97_64_6.png
+42,2397,1042,Industrial Fibers,1334.0,10033.0,1,/ui/texture/icons/97_64_7.png
+43,2398,1042,Reactive Metals,1334.0,10020.0,1,/ui/texture/icons/96_64_10.png
+44,2399,1042,Precious Metals,1334.0,10021.0,1,/ui/texture/icons/96_64_11.png
+45,2400,1042,Toxic Metals,1334.0,10022.0,1,/ui/texture/icons/96_64_12.png
+46,2401,1042,Chiral Structures,1334.0,10023.0,1,/ui/texture/icons/96_64_13.png
+47,2463,1034,Nanites,1335.0,10053.0,2,/ui/texture/icons/98_64_11.png
+48,2867,1041,Broadcast Node,1337.0,10073.0,4,/ui/texture/icons/99_64_6.png
+49,2868,1041,Integrity Response Drones,1337.0,10074.0,4,/ui/texture/icons/99_64_2.png
+50,2869,1041,Nano-Factory,1337.0,10075.0,4,/ui/texture/icons/99_64_5.png
+51,2870,1041,Organic Mortar Applicators,1337.0,10076.0,4,/ui/texture/icons/99_64_3.png
+52,2871,1041,Recursive Computing Module,1337.0,10071.0,4,/ui/texture/icons/99_64_7.png
+53,2872,1041,Self-Harmonizing Power Core,1337.0,10078.0,4,/ui/texture/icons/99_64_1.png
+54,2875,1041,Sterile Conduits,1337.0,10079.0,4,/ui/texture/icons/99_64_4.png
+55,2876,1041,Wetware Mainframe,1337.0,10077.0,4,/ui/texture/icons/99_64_8.png
+56,3645,1042,Water,1334.0,1178.0,1,/ui/texture/icons/10_64_4.png
+57,3683,1042,Oxygen,1334.0,1183.0,1,/ui/texture/icons/10_64_7.png
+58,3689,1034,Mechanical Parts,1335.0,1186.0,2,/ui/texture/icons/10_64_10.png
+59,3691,1034,Synthetic Oil,1335.0,1187.0,2,/ui/texture/icons/10_64_11.png
+60,3693,1034,Fertilizer,1335.0,1188.0,2,/ui/texture/icons/10_64_12.png
+61,3695,1034,Polytextiles,1335.0,1189.0,2,/ui/texture/icons/10_64_13.png
+62,3697,1034,Silicate Glass,1335.0,1190.0,2,/ui/texture/icons/10_64_14.png
+63,3725,1034,Livestock,1335.0,1205.0,2,/ui/texture/icons/11_64_13.png
+64,3775,1034,Viral Agent,1335.0,1199.0,2,/ui/texture/icons/11_64_7.png
+65,3779,1042,Biomass,1334.0,10030.0,1,/ui/texture/icons/97_64_4.png
+66,3828,1034,Construction Blocks,1335.0,26.0,2,/ui/texture/icons/6_64_5.png
+67,9828,1042,Silicon,1334.0,1358.0,1,/ui/texture/icons/24_64_4.png
+68,9830,1034,Rocket Fuel,1335.0,1359.0,2,/ui/texture/icons/24_64_5.png
+69,9832,1034,Coolant,1335.0,1360.0,2,/ui/texture/icons/24_64_6.png
+70,9834,1040,Guidance Systems,1336.0,1361.0,3,/ui/texture/icons/24_64_7.png
+71,9836,1034,Consumer Electronics,1335.0,1362.0,2,/ui/texture/icons/24_64_8.png
+72,9838,1034,Superconductors,1335.0,1363.0,2,/ui/texture/icons/24_64_9.png
+73,9840,1034,Transmitter,1335.0,1364.0,2,/ui/texture/icons/24_64_10.png
+74,9842,1034,Miniature Electronics,1335.0,1365.0,2,/ui/texture/icons/24_64_11.png
+75,9846,1040,Planetary Vehicles,1336.0,1367.0,3,/ui/texture/icons/24_64_13.png
+76,9848,1040,Robotics,1336.0,1368.0,3,/ui/texture/icons/24_64_14.png
+77,12836,1040,Transcranial Microcontrollers,1336.0,2038.0,3,/ui/texture/icons/34_64_6.png
+78,15317,1034,Genetically Enhanced Livestock,1335.0,2551.0,2,/ui/texture/icons/43_64_14.png
+79,17136,1040,Ukomi Superconductors,1336.0,1363.0,3,/ui/texture/icons/24_64_9.png
+80,17392,1040,Data Chips,1336.0,2038.0,3,/ui/texture/icons/34_64_6.png
+81,17898,1040,High-Tech Transmitters,1336.0,1364.0,3,/ui/texture/icons/24_64_10.png
+82,28974,1040,Vaccines,1336.0,1193.0,3,/ui/texture/icons/11_64_1.png
