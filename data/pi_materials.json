@@ -5,7 +5,12 @@
         "marketGroupID": 1335.0,
         "iconID": 29.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/6_64_6.png"
+        "iconFile": "/ui/texture/icons/6_64_6.png",
+        "unit_size": 5,
+        "components": {
+            "2400": 40,
+            "2399": 40
+        }
     },
     "2073": {
         "groupID": 1035,
@@ -13,7 +18,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10034.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_8.png"
+        "iconFile": "/ui/texture/icons/97_64_8.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2267": {
         "groupID": 1032,
@@ -21,7 +28,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10024.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_14.png"
+        "iconFile": "/ui/texture/icons/96_64_14.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2268": {
         "groupID": 1033,
@@ -29,7 +38,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10012.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_2.png"
+        "iconFile": "/ui/texture/icons/96_64_2.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2270": {
         "groupID": 1032,
@@ -37,7 +48,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10025.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_15.png"
+        "iconFile": "/ui/texture/icons/96_64_15.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2272": {
         "groupID": 1032,
@@ -45,7 +58,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10026.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_16.png"
+        "iconFile": "/ui/texture/icons/96_64_16.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2286": {
         "groupID": 1035,
@@ -53,7 +68,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10035.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_9.png"
+        "iconFile": "/ui/texture/icons/97_64_9.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2287": {
         "groupID": 1035,
@@ -61,7 +78,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10036.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_10.png"
+        "iconFile": "/ui/texture/icons/97_64_10.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2288": {
         "groupID": 1035,
@@ -69,7 +88,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10037.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_11.png"
+        "iconFile": "/ui/texture/icons/97_64_11.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2305": {
         "groupID": 1035,
@@ -77,7 +98,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10038.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_12.png"
+        "iconFile": "/ui/texture/icons/97_64_12.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2306": {
         "groupID": 1032,
@@ -85,7 +108,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10027.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_1.png"
+        "iconFile": "/ui/texture/icons/97_64_1.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2307": {
         "groupID": 1032,
@@ -93,7 +118,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10028.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/97_64_2.png"
+        "iconFile": "/ui/texture/icons/97_64_2.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2308": {
         "groupID": 1033,
@@ -101,7 +128,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10013.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_3.png"
+        "iconFile": "/ui/texture/icons/96_64_3.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2309": {
         "groupID": 1033,
@@ -109,7 +138,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10014.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_4.png"
+        "iconFile": "/ui/texture/icons/96_64_4.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2310": {
         "groupID": 1033,
@@ -117,7 +148,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10015.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_5.png"
+        "iconFile": "/ui/texture/icons/96_64_5.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2311": {
         "groupID": 1033,
@@ -125,7 +158,9 @@
         "marketGroupID": 1333.0,
         "iconID": 10016.0,
         "level": 0,
-        "iconFile": "/ui/texture/icons/96_64_6.png"
+        "iconFile": "/ui/texture/icons/96_64_6.png",
+        "unit_size": 3000,
+        "components": {}
     },
     "2312": {
         "groupID": 1034,
@@ -133,7 +168,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10057.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_15.png"
+        "iconFile": "/ui/texture/icons/98_64_15.png",
+        "unit_size": 5,
+        "components": {
+            "3683": 40,
+            "3779": 40
+        }
     },
     "2317": {
         "groupID": 1034,
@@ -141,7 +181,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10051.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_9.png"
+        "iconFile": "/ui/texture/icons/98_64_9.png",
+        "unit_size": 5,
+        "components": {
+            "3683": 40,
+            "2392": 40
+        }
     },
     "2319": {
         "groupID": 1034,
@@ -149,7 +194,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10056.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_14.png"
+        "iconFile": "/ui/texture/icons/98_64_14.png",
+        "unit_size": 5,
+        "components":{
+            "2393": 40,
+            "3645": 40
+        }
     },
     "2321": {
         "groupID": 1034,
@@ -157,7 +207,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10058.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_16.png"
+        "iconFile": "/ui/texture/icons/98_64_16.png",
+        "unit_size": 5,
+        "components":{
+            "2397": 40,
+            "2392": 40
+        }
     },
     "2327": {
         "groupID": 1034,
@@ -165,7 +220,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10055.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_13.png"
+        "iconFile": "/ui/texture/icons/98_64_13.png",
+        "unit_size": 5,
+        "components":{
+            "2397": 40,
+            "9828": 40
+        }
     },
     "2328": {
         "groupID": 1034,
@@ -173,7 +233,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10052.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_10.png"
+        "iconFile": "/ui/texture/icons/98_64_10.png",
+        "unit_size": 5,
+        "components":{
+            "3645": 40,
+            "2398": 40
+        }
     },
     "2329": {
         "groupID": 1034,
@@ -181,7 +246,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10054.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_12.png"
+        "iconFile": "/ui/texture/icons/98_64_12.png",
+        "unit_size": 5,
+        "components":{
+            "2396" : 40,
+            "2399" : 40
+        }
     },
     "2344": {
         "groupID": 1040,
@@ -189,7 +259,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10039.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/97_64_13.png"
+        "iconFile": "/ui/texture/icons/97_64_13.png",
+        "unit_size": 3,
+        "components":{
+            "9832" : 10,
+            "2317" : 10
+        }
     },
     "2345": {
         "groupID": 1040,
@@ -197,7 +272,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10040.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/97_64_14.png"
+        "iconFile": "/ui/texture/icons/97_64_14.png",
+        "unit_size": 3,
+        "components":{
+            "9830" : 10,
+            "3697" : 10
+        }
     },
     "2346": {
         "groupID": 1040,
@@ -205,7 +285,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10041.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/97_64_15.png"
+        "iconFile": "/ui/texture/icons/97_64_15.png",
+        "unit_size": 3,
+        "components":{
+            "2312" : 10,
+            "2319" : 10
+        }
     },
     "2348": {
         "groupID": 1040,
@@ -213,7 +298,13 @@
         "marketGroupID": 1336.0,
         "iconID": 10042.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/97_64_16.png"
+        "iconFile": "/ui/texture/icons/97_64_16.png",
+        "unit_size": 3,
+        "components":{
+            "2329" : 10,
+            "2317" : 10,
+            "9398" : 10
+        }
     },
     "2349": {
         "groupID": 1040,
@@ -221,7 +312,13 @@
         "marketGroupID": 1336.0,
         "iconID": 10043.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_1.png"
+        "iconFile": "/ui/texture/icons/98_64_1.png",
+        "unit_size": 3,
+        "components":{
+            "9836" : 10,
+            "9832" : 10,
+            "2328" : 10
+        }
     },
     "2351": {
         "groupID": 1040,
@@ -229,7 +326,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10044.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_2.png"
+        "iconFile": "/ui/texture/icons/98_64_2.png",
+        "unit_size": 3,
+        "components":{
+            "3828" : 10,
+            "9842" : 10
+        }
     },
     "2352": {
         "groupID": 1040,
@@ -237,7 +339,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10045.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_3.png"
+        "iconFile": "/ui/texture/icons/98_64_3.png",
+        "unit_size": 3,
+        "components":{
+            "44": 10,
+            "2327": 10
+        }
     },
     "2354": {
         "groupID": 1040,
@@ -245,7 +352,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10046.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_4.png"
+        "iconFile": "/ui/texture/icons/98_64_4.png",
+        "unit_size": 3,
+        "components":{
+            "2329":10,
+            "3697":10
+        }
     },
     "2358": {
         "groupID": 1040,
@@ -253,7 +365,13 @@
         "marketGroupID": 1336.0,
         "iconID": 10132.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/96_64_1.png"
+        "iconFile": "/ui/texture/icons/96_64_1.png",
+        "unit_size": 3,
+        "components":{
+            "3828": 10,
+            "3725": 10,
+            "2463": 10
+        }
     },
     "2360": {
         "groupID": 1040,
@@ -261,7 +379,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10047.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_5.png"
+        "iconFile": "/ui/texture/icons/98_64_5.png",
+        "unit_size": 3,
+        "components":{
+            "3693": 10,
+            "3695": 10
+        }
     },
     "2361": {
         "groupID": 1040,
@@ -269,7 +392,12 @@
         "marketGroupID": 1336.0,
         "iconID": 10048.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_6.png"
+        "iconFile": "/ui/texture/icons/98_64_6.png",
+        "unit_size": 3,
+        "components":{
+            "15317": 10,
+            "2321": 10
+        }
     },
     "2366": {
         "groupID": 1040,
@@ -277,7 +405,13 @@
         "marketGroupID": 1336.0,
         "iconID": 10049.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_7.png"
+        "iconFile": "/ui/texture/icons/98_64_7.png",
+        "unit_size": 3,
+        "components":{
+            "3695": 10,
+            "9240": 10,
+            "3775": 10
+        }
     },
     "2367": {
         "groupID": 1040,
@@ -285,7 +419,13 @@
         "marketGroupID": 1336.0,
         "iconID": 10050.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/98_64_8.png"
+        "iconFile": "/ui/texture/icons/98_64_8.png",
+        "unit_size": 3,
+        "components":{
+            "3693": 10,
+            "3691": 10,
+            "2391": 10
+        }
     },
     "2389": {
         "groupID": 1042,
@@ -293,7 +433,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10017.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_7.png"
+        "iconFile": "/ui/texture/icons/96_64_7.png",
+        "unit_size": 20,
+        "components":{
+            "2308": 3000
+        }
     },
     "2390": {
         "groupID": 1042,
@@ -301,7 +445,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10019.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_9.png"
+        "iconFile": "/ui/texture/icons/96_64_9.png",
+        "unit_size": 20,
+        "components":{
+            "2309": 3000
+        }
     },
     "2392": {
         "groupID": 1042,
@@ -309,7 +457,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10018.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_8.png"
+        "iconFile": "/ui/texture/icons/96_64_8.png",
+        "unit_size": 20,
+        "components":{
+            "2311": 3000
+        }
     },
     "2393": {
         "groupID": 1042,
@@ -317,7 +469,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10029.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/97_64_3.png"
+        "iconFile": "/ui/texture/icons/97_64_3.png",
+        "unit_size": 20,
+        "components":{
+            "2307": 3000
+        }
     },
     "2395": {
         "groupID": 1042,
@@ -325,7 +481,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10031.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/97_64_5.png"
+        "iconFile": "/ui/texture/icons/97_64_5.png",
+        "unit_size": 20,
+        "components":{
+            "2287": 3000
+        }
     },
     "2396": {
         "groupID": 1042,
@@ -333,7 +493,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10032.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/97_64_6.png"
+        "iconFile": "/ui/texture/icons/97_64_6.png",
+        "unit_size": 20,
+        "components":{
+            "2288": 3000
+        }
     },
     "2397": {
         "groupID": 1042,
@@ -341,7 +505,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10033.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/97_64_7.png"
+        "iconFile": "/ui/texture/icons/97_64_7.png",
+        "unit_size": 20,
+        "components":{
+            "2305": 3000
+        }
     },
     "2398": {
         "groupID": 1042,
@@ -349,7 +517,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10020.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_10.png"
+        "iconFile": "/ui/texture/icons/96_64_10.png",
+        "unit_size": 20,
+        "components":{
+            "2267": 3000
+        }
     },
     "2399": {
         "groupID": 1042,
@@ -357,7 +529,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10021.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_11.png"
+        "iconFile": "/ui/texture/icons/96_64_11.png",
+        "unit_size": 20,
+        "components":{
+            "2270": 3000
+        }
     },
     "2400": {
         "groupID": 1042,
@@ -365,7 +541,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10022.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_12.png"
+        "iconFile": "/ui/texture/icons/96_64_12.png",
+        "unit_size": 20,
+        "components":{
+            "2272": 3000
+        }
     },
     "2401": {
         "groupID": 1042,
@@ -373,7 +553,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10023.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/96_64_13.png"
+        "iconFile": "/ui/texture/icons/96_64_13.png",
+        "unit_size": 20,
+        "components":{
+            "2306": 3000
+        }
     },
     "2463": {
         "groupID": 1034,
@@ -381,7 +565,12 @@
         "marketGroupID": 1335.0,
         "iconID": 10053.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/98_64_11.png"
+        "iconFile": "/ui/texture/icons/98_64_11.png",
+        "unit_size": 5,
+        "components":{
+            "2398": 40,
+            "2393": 40
+        }
     },
     "2867": {
         "groupID": 1041,
@@ -389,7 +578,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10073.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_6.png"
+        "iconFile": "/ui/texture/icons/99_64_6.png",
+        "unit_size": 1,
+        "components":{
+            "17392": 6,
+            "17898": 6,
+            "2354": 6
+        }
     },
     "2868": {
         "groupID": 1041,
@@ -397,7 +592,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10074.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_2.png"
+        "iconFile": "/ui/texture/icons/99_64_2.png",
+        "unit_size": 1,
+        "components":{
+            "2348": 6,
+            "2366": 6,
+            "9846": 6
+        }
     },
     "2869": {
         "groupID": 1041,
@@ -405,7 +606,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10075.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_5.png"
+        "iconFile": "/ui/texture/icons/99_64_5.png",
+        "unit_size": 1,
+        "components":{
+            "2398": 40,
+            "2360": 6,
+            "17136": 6
+        }
     },
     "2870": {
         "groupID": 1041,
@@ -413,7 +620,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10076.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_3.png"
+        "iconFile": "/ui/texture/icons/99_64_3.png",
+        "unit_size": 1,
+        "components":{
+            "2344": 6,
+            "2393": 40,
+            "9848": 6
+        }
     },
     "2871": {
         "groupID": 1041,
@@ -421,7 +634,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10071.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_7.png"
+        "iconFile": "/ui/texture/icons/99_64_7.png",
+        "unit_size": 1,
+        "components":{
+            "9834": 6,
+            "2346": 6,
+            "12836": 6
+        }
     },
     "2872": {
         "groupID": 1041,
@@ -429,7 +648,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10078.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_1.png"
+        "iconFile": "/ui/texture/icons/99_64_1.png",
+        "unit_size": 1,
+        "components":{
+            "2345": 6,
+            "2361": 6,
+            "2352": 6
+        }
     },
     "2875": {
         "groupID": 1041,
@@ -437,7 +662,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10079.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_4.png"
+        "iconFile": "/ui/texture/icons/99_64_4.png",
+        "unit_size": 1,
+        "components":{
+            "3645": 40,
+            "2351": 6,
+            "28974": 6
+        }
     },
     "2876": {
         "groupID": 1041,
@@ -445,7 +676,13 @@
         "marketGroupID": 1337.0,
         "iconID": 10077.0,
         "level": 4,
-        "iconFile": "/ui/texture/icons/99_64_8.png"
+        "iconFile": "/ui/texture/icons/99_64_8.png",
+        "unit_size": 1,
+        "components":{
+            "2358": 6,
+            "2367": 6,
+            "2349": 6
+        }
     },
     "3645": {
         "groupID": 1042,
@@ -453,7 +690,11 @@
         "marketGroupID": 1334.0,
         "iconID": 1178.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/10_64_4.png"
+        "iconFile": "/ui/texture/icons/10_64_4.png",
+        "unit_size": 20,
+        "components":{
+            "2268": 3000
+        }
     },
     "3683": {
         "groupID": 1042,
@@ -461,7 +702,11 @@
         "marketGroupID": 1334.0,
         "iconID": 1183.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/10_64_7.png"
+        "iconFile": "/ui/texture/icons/10_64_7.png",
+        "unit_size": 20,
+        "components":{
+            "2310": 3000
+        }
     },
     "3689": {
         "groupID": 1034,
@@ -469,7 +714,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1186.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/10_64_10.png"
+        "iconFile": "/ui/texture/icons/10_64_10.png",
+        "unit_size": 5,
+        "components":{
+            "2398": 40,
+            "2399": 40
+        }
     },
     "3691": {
         "groupID": 1034,
@@ -477,7 +727,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1187.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/10_64_11.png"
+        "iconFile": "/ui/texture/icons/10_64_11.png",
+        "unit_size": 5,
+        "components":{
+            "2390": 40,
+            "3683": 40
+        }
     },
     "3693": {
         "groupID": 1034,
@@ -485,7 +740,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1188.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/10_64_12.png"
+        "iconFile": "/ui/texture/icons/10_64_12.png",
+        "unit_size": 5,
+        "components":{
+            "2395": 40,
+            "2393": 40
+        }
     },
     "3695": {
         "groupID": 1034,
@@ -493,7 +753,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1189.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/10_64_13.png"
+        "iconFile": "/ui/texture/icons/10_64_13.png",
+        "unit_size": 5,
+        "components":{
+            "2397": 40,
+            "2396": 40
+        }
     },
     "3697": {
         "groupID": 1034,
@@ -501,7 +766,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1190.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/10_64_14.png"
+        "iconFile": "/ui/texture/icons/10_64_14.png",
+        "unit_size": 5,
+        "components":{
+            "9828": 40,
+            "2392": 40
+        }
     },
     "3725": {
         "groupID": 1034,
@@ -509,7 +779,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1205.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/11_64_13.png"
+        "iconFile": "/ui/texture/icons/11_64_13.png",
+        "unit_size": 5,
+        "components":{
+            "2396": 40,
+            "2395": 40
+        }
     },
     "3775": {
         "groupID": 1034,
@@ -517,7 +792,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1199.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/11_64_7.png"
+        "iconFile": "/ui/texture/icons/11_64_7.png",
+        "unit_size": 5,
+        "components":{
+            "2393": 40,
+            "3779": 40
+        }
     },
     "3779": {
         "groupID": 1042,
@@ -525,7 +805,11 @@
         "marketGroupID": 1334.0,
         "iconID": 10030.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/97_64_4.png"
+        "iconFile": "/ui/texture/icons/97_64_4.png",
+        "unit_size": 20,
+        "components":{
+            "2286": 3000
+        }
     },
     "3828": {
         "groupID": 1034,
@@ -533,7 +817,12 @@
         "marketGroupID": 1335.0,
         "iconID": 26.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/6_64_5.png"
+        "iconFile": "/ui/texture/icons/6_64_5.png",
+        "unit_size": 5,
+        "components":{
+            "2398": 40,
+            "2400": 40
+        }
     },
     "9828": {
         "groupID": 1042,
@@ -541,7 +830,11 @@
         "marketGroupID": 1334.0,
         "iconID": 1358.0,
         "level": 1,
-        "iconFile": "/ui/texture/icons/24_64_4.png"
+        "iconFile": "/ui/texture/icons/24_64_4.png",
+        "unit_size": 20,
+        "components":{
+            "2307": 3000
+        }
     },
     "9830": {
         "groupID": 1034,
@@ -549,7 +842,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1359.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_5.png"
+        "iconFile": "/ui/texture/icons/24_64_5.png",
+        "unit_size": 5,
+        "components":{
+            "2390": 40,
+            "2398": 40
+        }
     },
     "9832": {
         "groupID": 1034,
@@ -557,7 +855,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1360.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_6.png"
+        "iconFile": "/ui/texture/icons/24_64_6.png",
+        "unit_size": 5,
+        "components":{
+            "2390": 40,
+            "3645": 40
+        }
     },
     "9834": {
         "groupID": 1040,
@@ -565,7 +868,12 @@
         "marketGroupID": 1336.0,
         "iconID": 1361.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/24_64_7.png"
+        "iconFile": "/ui/texture/icons/24_64_7.png",
+        "unit_size": 3,
+        "components":{
+            "9840": 10,
+            "2328": 10
+        }
     },
     "9836": {
         "groupID": 1034,
@@ -573,7 +881,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1362.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_8.png"
+        "iconFile": "/ui/texture/icons/24_64_8.png",
+        "unit_size": 5,
+        "components":{
+            "2400": 40,
+            "2401": 40
+        }
     },
     "9838": {
         "groupID": 1034,
@@ -581,7 +894,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1363.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_9.png"
+        "iconFile": "/ui/texture/icons/24_64_9.png",
+        "unit_size": 5,
+        "components":{
+            "3645": 40,
+            "2389": 40
+        }
     },
     "9840": {
         "groupID": 1034,
@@ -589,7 +907,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1364.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_10.png"
+        "iconFile": "/ui/texture/icons/24_64_10.png",
+        "unit_size": 5,
+        "components":{
+            "2401": 40,
+            "2389": 40
+        }
     },
     "9842": {
         "groupID": 1034,
@@ -597,7 +920,12 @@
         "marketGroupID": 1335.0,
         "iconID": 1365.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/24_64_11.png"
+        "iconFile": "/ui/texture/icons/24_64_11.png",
+        "unit_size": 5,
+        "components":{
+            "9828": 40,
+            "2401": 40
+        }
     },
     "9846": {
         "groupID": 1040,
@@ -605,7 +933,13 @@
         "marketGroupID": 1336.0,
         "iconID": 1367.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/24_64_13.png"
+        "iconFile": "/ui/texture/icons/24_64_13.png",
+        "unit_size": 3,
+        "components":{
+            "3698": 10,
+            "9842": 10,
+            "2312": 10
+        }
     },
     "9848": {
         "groupID": 1040,
@@ -613,7 +947,12 @@
         "marketGroupID": 1336.0,
         "iconID": 1368.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/24_64_14.png"
+        "iconFile": "/ui/texture/icons/24_64_14.png",
+        "unit_size": 3,
+        "components":{
+            "9836": 10,
+            "3698": 10
+        }
     },
     "12836": {
         "groupID": 1040,
@@ -621,7 +960,12 @@
         "marketGroupID": 1336.0,
         "iconID": 2038.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/34_64_6.png"
+        "iconFile": "/ui/texture/icons/34_64_6.png",
+        "unit_size": 3,
+        "components":{
+            "2329": 10,
+            "2463": 10
+        }
     },
     "15317": {
         "groupID": 1034,
@@ -629,7 +973,12 @@
         "marketGroupID": 1335.0,
         "iconID": 2551.0,
         "level": 2,
-        "iconFile": "/ui/texture/icons/43_64_14.png"
+        "iconFile": "/ui/texture/icons/43_64_14.png",
+        "unit_size": 5,
+        "components":{
+            "2395": 40,
+            "3779": 40
+        }
     },
     "17136": {
         "groupID": 1040,
@@ -637,7 +986,12 @@
         "marketGroupID": 1336.0,
         "iconID": 1363.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/24_64_9.png"
+        "iconFile": "/ui/texture/icons/24_64_9.png",
+        "unit_size": 3,
+        "components":{
+            "9398": 10,
+            "3691": 10
+        }
     },
     "17392": {
         "groupID": 1040,
@@ -645,7 +999,12 @@
         "marketGroupID": 1336.0,
         "iconID": 2038.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/34_64_6.png"
+        "iconFile": "/ui/texture/icons/34_64_6.png",
+        "unit_size": 3,
+        "components":{
+            "2327": 10,
+            "2312": 10
+        }
     },
     "17898": {
         "groupID": 1040,
@@ -653,7 +1012,12 @@
         "marketGroupID": 1336.0,
         "iconID": 1364.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/24_64_10.png"
+        "iconFile": "/ui/texture/icons/24_64_10.png",
+        "unit_size": 3,
+        "components":{
+            "2321": 10,
+            "9840": 10
+        }
     },
     "28974": {
         "groupID": 1040,
@@ -661,6 +1025,11 @@
         "marketGroupID": 1336.0,
         "iconID": 1193.0,
         "level": 3,
-        "iconFile": "/ui/texture/icons/11_64_1.png"
+        "iconFile": "/ui/texture/icons/11_64_1.png",
+        "unit_size": 3,
+        "components":{
+            "3725": 10,
+            "3775": 10
+        }
     }
 }
