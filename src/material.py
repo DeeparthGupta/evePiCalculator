@@ -10,23 +10,19 @@ class Material:
     icon_id: str
     level: int
     market_group_id: int
-    components: Dict[str, int]
+    component_dict: Dict[str, int]
 
     @property
     def name(self):
         return self.material_name
-    
+
     @property
     def id(self):
         return self.material_id
 
     @property
     def components(self):
-        return self.components
-
-    @property
-    def unit_size(self):
-        return self.unit_size   
+        return self.component_dict
 
     def __repr__(self):
         return (
