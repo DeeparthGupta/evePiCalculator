@@ -1,4 +1,5 @@
 import json
+
 from Material import Material
 
 material_totals = dict(None)
@@ -7,11 +8,15 @@ material_totals = dict(None)
 def create_material_from_definition(material_definition):
     # Creates a material object from given material dictionary
 
-    name = material_definition.name
-    components = material_definition.components
-    unit_size = material_definition.unit_size
+    material_id = material_definition.key()
+    name = material_definition["typeName"]
+    unit = material_definition["unit_size"]
+    icon_id = material_definition["iconID"]
+    level = material_definition["level"]
+    group_id = material_definition["marketGroupID"]
+    components = material_definition["components"]
 
-    return Material(name, unit_size, components)
+    return Material(material_id, name, unit, icon_id, level, group_id, components)
 
 
 def create_materials_from_file(file_name):
@@ -21,7 +26,7 @@ def create_materials_from_file(file_name):
         data = json.load(file)
 
     # Create material objects from file
-    materials = dict()
+    materials = {}
     for material_name in data:
         materials[material_name] = create_material_from_definition(data[material_name])
 
@@ -58,4 +63,5 @@ def remove_material(name):
 
 
 def main():
-    pi_materials = create_materials_from_file(None)
+    materials_data_path = "data/pi_materials.json"
+    pi_materials = create_materials_from_file(materials_data_path)
