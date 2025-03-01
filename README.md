@@ -1,0 +1,1 @@
+This is an exploration of the methods to do EVE online PI material calculations in the language I'm most comfortable with: Python. The the idea is to solidify a structure and implementation so that I can implement and host it online for others to use. 
