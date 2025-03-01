@@ -2,8 +2,8 @@
     "44": {
         "groupID": 1034,
         "typeName": "Enriched Uranium",
-        "marketGroupID": 1335.0,
-        "iconID": 29.0,
+        "marketGroupID": 1335,
+        "iconID": 29,
         "level": 2,
         "iconFile": "/ui/texture/icons/6_64_6.png",
         "unit_size": 5,
@@ -15,8 +15,8 @@
     "2073": {
         "groupID": 1035,
         "typeName": "Microorganisms",
-        "marketGroupID": 1333.0,
-        "iconID": 10034.0,
+        "marketGroupID": 1333,
+        "iconID": 10034,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_8.png",
         "unit_size": 3000,
@@ -25,8 +25,8 @@
     "2267": {
         "groupID": 1032,
         "typeName": "Base Metals",
-        "marketGroupID": 1333.0,
-        "iconID": 10024.0,
+        "marketGroupID": 1333,
+        "iconID": 10024,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_14.png",
         "unit_size": 3000,
@@ -35,8 +35,8 @@
     "2268": {
         "groupID": 1033,
         "typeName": "Aqueous Liquids",
-        "marketGroupID": 1333.0,
-        "iconID": 10012.0,
+        "marketGroupID": 1333,
+        "iconID": 10012,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_2.png",
         "unit_size": 3000,
@@ -45,8 +45,8 @@
     "2270": {
         "groupID": 1032,
         "typeName": "Noble Metals",
-        "marketGroupID": 1333.0,
-        "iconID": 10025.0,
+        "marketGroupID": 1333,
+        "iconID": 10025,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_15.png",
         "unit_size": 3000,
@@ -55,8 +55,8 @@
     "2272": {
         "groupID": 1032,
         "typeName": "Heavy Metals",
-        "marketGroupID": 1333.0,
-        "iconID": 10026.0,
+        "marketGroupID": 1333,
+        "iconID": 10026,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_16.png",
         "unit_size": 3000,
@@ -65,8 +65,8 @@
     "2286": {
         "groupID": 1035,
         "typeName": "Planktic Colonies",
-        "marketGroupID": 1333.0,
-        "iconID": 10035.0,
+        "marketGroupID": 1333,
+        "iconID": 10035,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_9.png",
         "unit_size": 3000,
@@ -75,8 +75,8 @@
     "2287": {
         "groupID": 1035,
         "typeName": "Complex Organisms",
-        "marketGroupID": 1333.0,
-        "iconID": 10036.0,
+        "marketGroupID": 1333,
+        "iconID": 10036,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_10.png",
         "unit_size": 3000,
@@ -85,8 +85,8 @@
     "2288": {
         "groupID": 1035,
         "typeName": "Carbon Compounds",
-        "marketGroupID": 1333.0,
-        "iconID": 10037.0,
+        "marketGroupID": 1333,
+        "iconID": 10037,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_11.png",
         "unit_size": 3000,
@@ -95,8 +95,8 @@
     "2305": {
         "groupID": 1035,
         "typeName": "Autotrophs",
-        "marketGroupID": 1333.0,
-        "iconID": 10038.0,
+        "marketGroupID": 1333,
+        "iconID": 10038,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_12.png",
         "unit_size": 3000,
@@ -105,8 +105,8 @@
     "2306": {
         "groupID": 1032,
         "typeName": "Non-CS Crystals",
-        "marketGroupID": 1333.0,
-        "iconID": 10027.0,
+        "marketGroupID": 1333,
+        "iconID": 10027,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_1.png",
         "unit_size": 3000,
@@ -115,8 +115,8 @@
     "2307": {
         "groupID": 1032,
         "typeName": "Felsic Magma",
-        "marketGroupID": 1333.0,
-        "iconID": 10028.0,
+        "marketGroupID": 1333,
+        "iconID": 10028,
         "level": 0,
         "iconFile": "/ui/texture/icons/97_64_2.png",
         "unit_size": 3000,
@@ -125,8 +125,8 @@
     "2308": {
         "groupID": 1033,
         "typeName": "Suspended Plasma",
-        "marketGroupID": 1333.0,
-        "iconID": 10013.0,
+        "marketGroupID": 1333,
+        "iconID": 10013,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_3.png",
         "unit_size": 3000,
@@ -135,8 +135,8 @@
     "2309": {
         "groupID": 1033,
         "typeName": "Ionic Solutions",
-        "marketGroupID": 1333.0,
-        "iconID": 10014.0,
+        "marketGroupID": 1333,
+        "iconID": 10014,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_4.png",
         "unit_size": 3000,
@@ -145,8 +145,8 @@
     "2310": {
         "groupID": 1033,
         "typeName": "Noble Gas",
-        "marketGroupID": 1333.0,
-        "iconID": 10015.0,
+        "marketGroupID": 1333,
+        "iconID": 10015,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_5.png",
         "unit_size": 3000,
@@ -155,8 +155,8 @@
     "2311": {
         "groupID": 1033,
         "typeName": "Reactive Gas",
-        "marketGroupID": 1333.0,
-        "iconID": 10016.0,
+        "marketGroupID": 1333,
+        "iconID": 10016,
         "level": 0,
         "iconFile": "/ui/texture/icons/96_64_6.png",
         "unit_size": 3000,
@@ -165,8 +165,8 @@
     "2312": {
         "groupID": 1034,
         "typeName": "Supertensile Plastics",
-        "marketGroupID": 1335.0,
-        "iconID": 10057.0,
+        "marketGroupID": 1335,
+        "iconID": 10057,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_15.png",
         "unit_size": 5,
@@ -178,8 +178,8 @@
     "2317": {
         "groupID": 1034,
         "typeName": "Oxides",
-        "marketGroupID": 1335.0,
-        "iconID": 10051.0,
+        "marketGroupID": 1335,
+        "iconID": 10051,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_9.png",
         "unit_size": 5,
@@ -191,12 +191,12 @@
     "2319": {
         "groupID": 1034,
         "typeName": "Test Cultures",
-        "marketGroupID": 1335.0,
-        "iconID": 10056.0,
+        "marketGroupID": 1335,
+        "iconID": 10056,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_14.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2393": 40,
             "3645": 40
         }
@@ -204,12 +204,12 @@
     "2321": {
         "groupID": 1034,
         "typeName": "Polyaramids",
-        "marketGroupID": 1335.0,
-        "iconID": 10058.0,
+        "marketGroupID": 1335,
+        "iconID": 10058,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_16.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2397": 40,
             "2392": 40
         }
@@ -217,12 +217,12 @@
     "2327": {
         "groupID": 1034,
         "typeName": "Microfiber Shielding",
-        "marketGroupID": 1335.0,
-        "iconID": 10055.0,
+        "marketGroupID": 1335,
+        "iconID": 10055,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_13.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2397": 40,
             "9828": 40
         }
@@ -230,12 +230,12 @@
     "2328": {
         "groupID": 1034,
         "typeName": "Water-Cooled CPU",
-        "marketGroupID": 1335.0,
-        "iconID": 10052.0,
+        "marketGroupID": 1335,
+        "iconID": 10052,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_10.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "3645": 40,
             "2398": 40
         }
@@ -243,105 +243,105 @@
     "2329": {
         "groupID": 1034,
         "typeName": "Biocells",
-        "marketGroupID": 1335.0,
-        "iconID": 10054.0,
+        "marketGroupID": 1335,
+        "iconID": 10054,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_12.png",
         "unit_size": 5,
-        "components":{
-            "2396" : 40,
-            "2399" : 40
+        "components": {
+            "2396": 40,
+            "2399": 40
         }
     },
     "2344": {
         "groupID": 1040,
         "typeName": "Condensates",
-        "marketGroupID": 1336.0,
-        "iconID": 10039.0,
+        "marketGroupID": 1336,
+        "iconID": 10039,
         "level": 3,
         "iconFile": "/ui/texture/icons/97_64_13.png",
         "unit_size": 3,
-        "components":{
-            "9832" : 10,
-            "2317" : 10
+        "components": {
+            "9832": 10,
+            "2317": 10
         }
     },
     "2345": {
         "groupID": 1040,
         "typeName": "Camera Drones",
-        "marketGroupID": 1336.0,
-        "iconID": 10040.0,
+        "marketGroupID": 1336,
+        "iconID": 10040,
         "level": 3,
         "iconFile": "/ui/texture/icons/97_64_14.png",
         "unit_size": 3,
-        "components":{
-            "9830" : 10,
-            "3697" : 10
+        "components": {
+            "9830": 10,
+            "3697": 10
         }
     },
     "2346": {
         "groupID": 1040,
         "typeName": "Synthetic Synapses",
-        "marketGroupID": 1336.0,
-        "iconID": 10041.0,
+        "marketGroupID": 1336,
+        "iconID": 10041,
         "level": 3,
         "iconFile": "/ui/texture/icons/97_64_15.png",
         "unit_size": 3,
-        "components":{
-            "2312" : 10,
-            "2319" : 10
+        "components": {
+            "2312": 10,
+            "2319": 10
         }
     },
     "2348": {
         "groupID": 1040,
         "typeName": "Gel-Matrix Biopaste",
-        "marketGroupID": 1336.0,
-        "iconID": 10042.0,
+        "marketGroupID": 1336,
+        "iconID": 10042,
         "level": 3,
         "iconFile": "/ui/texture/icons/97_64_16.png",
         "unit_size": 3,
-        "components":{
-            "2329" : 10,
-            "2317" : 10,
-            "9398" : 10
+        "components": {
+            "2329": 10,
+            "2317": 10,
+            "9398": 10
         }
     },
     "2349": {
         "groupID": 1040,
         "typeName": "Supercomputers",
-        "marketGroupID": 1336.0,
-        "iconID": 10043.0,
+        "marketGroupID": 1336,
+        "iconID": 10043,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_1.png",
         "unit_size": 3,
-        "components":{
-            "9836" : 10,
-            "9832" : 10,
-            "2328" : 10
+        "components": {
+            "9836": 10,
+            "9832": 10,
+            "2328": 10
         }
     },
     "2351": {
         "groupID": 1040,
         "typeName": "Smartfab Units",
-        "marketGroupID": 1336.0,
-        "iconID": 10044.0,
+        "marketGroupID": 1336,
+        "iconID": 10044,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_2.png",
         "unit_size": 3,
-        "components":{
-            "3828" : 10,
-            "9842" : 10
+        "components": {
+            "3828": 10,
+            "9842": 10
         }
     },
     "2352": {
         "groupID": 1040,
         "typeName": "Nuclear Reactors",
-        "marketGroupID": 1336.0,
-        "iconID": 10045.0,
+        "marketGroupID": 1336,
+        "iconID": 10045,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_3.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "44": 10,
             "2327": 10
         }
@@ -349,25 +349,25 @@
     "2354": {
         "groupID": 1040,
         "typeName": "Neocoms",
-        "marketGroupID": 1336.0,
-        "iconID": 10046.0,
+        "marketGroupID": 1336,
+        "iconID": 10046,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_4.png",
         "unit_size": 3,
-        "components":{
-            "2329":10,
-            "3697":10
+        "components": {
+            "2329": 10,
+            "3697": 10
         }
     },
     "2358": {
         "groupID": 1040,
         "typeName": "Biotech Research Reports",
-        "marketGroupID": 1336.0,
-        "iconID": 10132.0,
+        "marketGroupID": 1336,
+        "iconID": 10132,
         "level": 3,
         "iconFile": "/ui/texture/icons/96_64_1.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3828": 10,
             "3725": 10,
             "2463": 10
@@ -376,12 +376,12 @@
     "2360": {
         "groupID": 1040,
         "typeName": "Industrial Explosives",
-        "marketGroupID": 1336.0,
-        "iconID": 10047.0,
+        "marketGroupID": 1336,
+        "iconID": 10047,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_5.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3693": 10,
             "3695": 10
         }
@@ -389,12 +389,12 @@
     "2361": {
         "groupID": 1040,
         "typeName": "Hermetic Membranes",
-        "marketGroupID": 1336.0,
-        "iconID": 10048.0,
+        "marketGroupID": 1336,
+        "iconID": 10048,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_6.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "15317": 10,
             "2321": 10
         }
@@ -402,12 +402,12 @@
     "2366": {
         "groupID": 1040,
         "typeName": "Hazmat Detection Systems",
-        "marketGroupID": 1336.0,
-        "iconID": 10049.0,
+        "marketGroupID": 1336,
+        "iconID": 10049,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_7.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3695": 10,
             "9240": 10,
             "3775": 10
@@ -416,12 +416,12 @@
     "2367": {
         "groupID": 1040,
         "typeName": "Cryoprotectant Solution",
-        "marketGroupID": 1336.0,
-        "iconID": 10050.0,
+        "marketGroupID": 1336,
+        "iconID": 10050,
         "level": 3,
         "iconFile": "/ui/texture/icons/98_64_8.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3693": 10,
             "3691": 10,
             "2391": 10
@@ -430,144 +430,144 @@
     "2389": {
         "groupID": 1042,
         "typeName": "Plasmoids",
-        "marketGroupID": 1334.0,
-        "iconID": 10017.0,
+        "marketGroupID": 1334,
+        "iconID": 10017,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_7.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2308": 3000
         }
     },
     "2390": {
         "groupID": 1042,
         "typeName": "Electrolytes",
-        "marketGroupID": 1334.0,
-        "iconID": 10019.0,
+        "marketGroupID": 1334,
+        "iconID": 10019,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_9.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2309": 3000
         }
     },
     "2392": {
         "groupID": 1042,
         "typeName": "Oxidizing Compound",
-        "marketGroupID": 1334.0,
-        "iconID": 10018.0,
+        "marketGroupID": 1334,
+        "iconID": 10018,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_8.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2311": 3000
         }
     },
     "2393": {
         "groupID": 1042,
         "typeName": "Bacteria",
-        "marketGroupID": 1334.0,
-        "iconID": 10029.0,
+        "marketGroupID": 1334,
+        "iconID": 10029,
         "level": 1,
         "iconFile": "/ui/texture/icons/97_64_3.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2307": 3000
         }
     },
     "2395": {
         "groupID": 1042,
         "typeName": "Proteins",
-        "marketGroupID": 1334.0,
-        "iconID": 10031.0,
+        "marketGroupID": 1334,
+        "iconID": 10031,
         "level": 1,
         "iconFile": "/ui/texture/icons/97_64_5.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2287": 3000
         }
     },
     "2396": {
         "groupID": 1042,
         "typeName": "Biofuels",
-        "marketGroupID": 1334.0,
-        "iconID": 10032.0,
+        "marketGroupID": 1334,
+        "iconID": 10032,
         "level": 1,
         "iconFile": "/ui/texture/icons/97_64_6.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2288": 3000
         }
     },
     "2397": {
         "groupID": 1042,
         "typeName": "Industrial Fibers",
-        "marketGroupID": 1334.0,
-        "iconID": 10033.0,
+        "marketGroupID": 1334,
+        "iconID": 10033,
         "level": 1,
         "iconFile": "/ui/texture/icons/97_64_7.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2305": 3000
         }
     },
     "2398": {
         "groupID": 1042,
         "typeName": "Reactive Metals",
-        "marketGroupID": 1334.0,
-        "iconID": 10020.0,
+        "marketGroupID": 1334,
+        "iconID": 10020,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_10.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2267": 3000
         }
     },
     "2399": {
         "groupID": 1042,
         "typeName": "Precious Metals",
-        "marketGroupID": 1334.0,
-        "iconID": 10021.0,
+        "marketGroupID": 1334,
+        "iconID": 10021,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_11.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2270": 3000
         }
     },
     "2400": {
         "groupID": 1042,
         "typeName": "Toxic Metals",
-        "marketGroupID": 1334.0,
-        "iconID": 10022.0,
+        "marketGroupID": 1334,
+        "iconID": 10022,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_12.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2272": 3000
         }
     },
     "2401": {
         "groupID": 1042,
         "typeName": "Chiral Structures",
-        "marketGroupID": 1334.0,
-        "iconID": 10023.0,
+        "marketGroupID": 1334,
+        "iconID": 10023,
         "level": 1,
         "iconFile": "/ui/texture/icons/96_64_13.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2306": 3000
         }
     },
     "2463": {
         "groupID": 1034,
         "typeName": "Nanites",
-        "marketGroupID": 1335.0,
-        "iconID": 10053.0,
+        "marketGroupID": 1335,
+        "iconID": 10053,
         "level": 2,
         "iconFile": "/ui/texture/icons/98_64_11.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2398": 40,
             "2393": 40
         }
@@ -575,12 +575,12 @@
     "2867": {
         "groupID": 1041,
         "typeName": "Broadcast Node",
-        "marketGroupID": 1337.0,
-        "iconID": 10073.0,
+        "marketGroupID": 1337,
+        "iconID": 10073,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_6.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "17392": 6,
             "17898": 6,
             "2354": 6
@@ -589,12 +589,12 @@
     "2868": {
         "groupID": 1041,
         "typeName": "Integrity Response Drones",
-        "marketGroupID": 1337.0,
-        "iconID": 10074.0,
+        "marketGroupID": 1337,
+        "iconID": 10074,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_2.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "2348": 6,
             "2366": 6,
             "9846": 6
@@ -603,12 +603,12 @@
     "2869": {
         "groupID": 1041,
         "typeName": "Nano-Factory",
-        "marketGroupID": 1337.0,
-        "iconID": 10075.0,
+        "marketGroupID": 1337,
+        "iconID": 10075,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_5.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "2398": 40,
             "2360": 6,
             "17136": 6
@@ -617,12 +617,12 @@
     "2870": {
         "groupID": 1041,
         "typeName": "Organic Mortar Applicators",
-        "marketGroupID": 1337.0,
-        "iconID": 10076.0,
+        "marketGroupID": 1337,
+        "iconID": 10076,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_3.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "2344": 6,
             "2393": 40,
             "9848": 6
@@ -631,12 +631,12 @@
     "2871": {
         "groupID": 1041,
         "typeName": "Recursive Computing Module",
-        "marketGroupID": 1337.0,
-        "iconID": 10071.0,
+        "marketGroupID": 1337,
+        "iconID": 10071,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_7.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "9834": 6,
             "2346": 6,
             "12836": 6
@@ -645,12 +645,12 @@
     "2872": {
         "groupID": 1041,
         "typeName": "Self-Harmonizing Power Core",
-        "marketGroupID": 1337.0,
-        "iconID": 10078.0,
+        "marketGroupID": 1337,
+        "iconID": 10078,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_1.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "2345": 6,
             "2361": 6,
             "2352": 6
@@ -659,12 +659,12 @@
     "2875": {
         "groupID": 1041,
         "typeName": "Sterile Conduits",
-        "marketGroupID": 1337.0,
-        "iconID": 10079.0,
+        "marketGroupID": 1337,
+        "iconID": 10079,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_4.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "3645": 40,
             "2351": 6,
             "28974": 6
@@ -673,12 +673,12 @@
     "2876": {
         "groupID": 1041,
         "typeName": "Wetware Mainframe",
-        "marketGroupID": 1337.0,
-        "iconID": 10077.0,
+        "marketGroupID": 1337,
+        "iconID": 10077,
         "level": 4,
         "iconFile": "/ui/texture/icons/99_64_8.png",
         "unit_size": 1,
-        "components":{
+        "components": {
             "2358": 6,
             "2367": 6,
             "2349": 6
@@ -687,36 +687,36 @@
     "3645": {
         "groupID": 1042,
         "typeName": "Water",
-        "marketGroupID": 1334.0,
-        "iconID": 1178.0,
+        "marketGroupID": 1334,
+        "iconID": 1178,
         "level": 1,
         "iconFile": "/ui/texture/icons/10_64_4.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2268": 3000
         }
     },
     "3683": {
         "groupID": 1042,
         "typeName": "Oxygen",
-        "marketGroupID": 1334.0,
-        "iconID": 1183.0,
+        "marketGroupID": 1334,
+        "iconID": 1183,
         "level": 1,
         "iconFile": "/ui/texture/icons/10_64_7.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2310": 3000
         }
     },
     "3689": {
         "groupID": 1034,
         "typeName": "Mechanical Parts",
-        "marketGroupID": 1335.0,
-        "iconID": 1186.0,
+        "marketGroupID": 1335,
+        "iconID": 1186,
         "level": 2,
         "iconFile": "/ui/texture/icons/10_64_10.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2398": 40,
             "2399": 40
         }
@@ -724,12 +724,12 @@
     "3691": {
         "groupID": 1034,
         "typeName": "Synthetic Oil",
-        "marketGroupID": 1335.0,
-        "iconID": 1187.0,
+        "marketGroupID": 1335,
+        "iconID": 1187,
         "level": 2,
         "iconFile": "/ui/texture/icons/10_64_11.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2390": 40,
             "3683": 40
         }
@@ -737,12 +737,12 @@
     "3693": {
         "groupID": 1034,
         "typeName": "Fertilizer",
-        "marketGroupID": 1335.0,
-        "iconID": 1188.0,
+        "marketGroupID": 1335,
+        "iconID": 1188,
         "level": 2,
         "iconFile": "/ui/texture/icons/10_64_12.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2395": 40,
             "2393": 40
         }
@@ -750,12 +750,12 @@
     "3695": {
         "groupID": 1034,
         "typeName": "Polytextiles",
-        "marketGroupID": 1335.0,
-        "iconID": 1189.0,
+        "marketGroupID": 1335,
+        "iconID": 1189,
         "level": 2,
         "iconFile": "/ui/texture/icons/10_64_13.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2397": 40,
             "2396": 40
         }
@@ -763,12 +763,12 @@
     "3697": {
         "groupID": 1034,
         "typeName": "Silicate Glass",
-        "marketGroupID": 1335.0,
-        "iconID": 1190.0,
+        "marketGroupID": 1335,
+        "iconID": 1190,
         "level": 2,
         "iconFile": "/ui/texture/icons/10_64_14.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "9828": 40,
             "2392": 40
         }
@@ -776,12 +776,12 @@
     "3725": {
         "groupID": 1034,
         "typeName": "Livestock",
-        "marketGroupID": 1335.0,
-        "iconID": 1205.0,
+        "marketGroupID": 1335,
+        "iconID": 1205,
         "level": 2,
         "iconFile": "/ui/texture/icons/11_64_13.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2396": 40,
             "2395": 40
         }
@@ -789,12 +789,12 @@
     "3775": {
         "groupID": 1034,
         "typeName": "Viral Agent",
-        "marketGroupID": 1335.0,
-        "iconID": 1199.0,
+        "marketGroupID": 1335,
+        "iconID": 1199,
         "level": 2,
         "iconFile": "/ui/texture/icons/11_64_7.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2393": 40,
             "3779": 40
         }
@@ -802,24 +802,24 @@
     "3779": {
         "groupID": 1042,
         "typeName": "Biomass",
-        "marketGroupID": 1334.0,
-        "iconID": 10030.0,
+        "marketGroupID": 1334,
+        "iconID": 10030,
         "level": 1,
         "iconFile": "/ui/texture/icons/97_64_4.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2286": 3000
         }
     },
     "3828": {
         "groupID": 1034,
         "typeName": "Construction Blocks",
-        "marketGroupID": 1335.0,
-        "iconID": 26.0,
+        "marketGroupID": 1335,
+        "iconID": 26,
         "level": 2,
         "iconFile": "/ui/texture/icons/6_64_5.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2398": 40,
             "2400": 40
         }
@@ -827,24 +827,24 @@
     "9828": {
         "groupID": 1042,
         "typeName": "Silicon",
-        "marketGroupID": 1334.0,
-        "iconID": 1358.0,
+        "marketGroupID": 1334,
+        "iconID": 1358,
         "level": 1,
         "iconFile": "/ui/texture/icons/24_64_4.png",
         "unit_size": 20,
-        "components":{
+        "components": {
             "2307": 3000
         }
     },
     "9830": {
         "groupID": 1034,
         "typeName": "Rocket Fuel",
-        "marketGroupID": 1335.0,
-        "iconID": 1359.0,
+        "marketGroupID": 1335,
+        "iconID": 1359,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_5.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2390": 40,
             "2398": 40
         }
@@ -852,12 +852,12 @@
     "9832": {
         "groupID": 1034,
         "typeName": "Coolant",
-        "marketGroupID": 1335.0,
-        "iconID": 1360.0,
+        "marketGroupID": 1335,
+        "iconID": 1360,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_6.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2390": 40,
             "3645": 40
         }
@@ -865,12 +865,12 @@
     "9834": {
         "groupID": 1040,
         "typeName": "Guidance Systems",
-        "marketGroupID": 1336.0,
-        "iconID": 1361.0,
+        "marketGroupID": 1336,
+        "iconID": 1361,
         "level": 3,
         "iconFile": "/ui/texture/icons/24_64_7.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "9840": 10,
             "2328": 10
         }
@@ -878,12 +878,12 @@
     "9836": {
         "groupID": 1034,
         "typeName": "Consumer Electronics",
-        "marketGroupID": 1335.0,
-        "iconID": 1362.0,
+        "marketGroupID": 1335,
+        "iconID": 1362,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_8.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2400": 40,
             "2401": 40
         }
@@ -891,12 +891,12 @@
     "9838": {
         "groupID": 1034,
         "typeName": "Superconductors",
-        "marketGroupID": 1335.0,
-        "iconID": 1363.0,
+        "marketGroupID": 1335,
+        "iconID": 1363,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_9.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "3645": 40,
             "2389": 40
         }
@@ -904,12 +904,12 @@
     "9840": {
         "groupID": 1034,
         "typeName": "Transmitter",
-        "marketGroupID": 1335.0,
-        "iconID": 1364.0,
+        "marketGroupID": 1335,
+        "iconID": 1364,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_10.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2401": 40,
             "2389": 40
         }
@@ -917,12 +917,12 @@
     "9842": {
         "groupID": 1034,
         "typeName": "Miniature Electronics",
-        "marketGroupID": 1335.0,
-        "iconID": 1365.0,
+        "marketGroupID": 1335,
+        "iconID": 1365,
         "level": 2,
         "iconFile": "/ui/texture/icons/24_64_11.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "9828": 40,
             "2401": 40
         }
@@ -930,12 +930,12 @@
     "9846": {
         "groupID": 1040,
         "typeName": "Planetary Vehicles",
-        "marketGroupID": 1336.0,
-        "iconID": 1367.0,
+        "marketGroupID": 1336,
+        "iconID": 1367,
         "level": 3,
         "iconFile": "/ui/texture/icons/24_64_13.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3698": 10,
             "9842": 10,
             "2312": 10
@@ -944,12 +944,12 @@
     "9848": {
         "groupID": 1040,
         "typeName": "Robotics",
-        "marketGroupID": 1336.0,
-        "iconID": 1368.0,
+        "marketGroupID": 1336,
+        "iconID": 1368,
         "level": 3,
         "iconFile": "/ui/texture/icons/24_64_14.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "9836": 10,
             "3698": 10
         }
@@ -957,12 +957,12 @@
     "12836": {
         "groupID": 1040,
         "typeName": "Transcranial Microcontrollers",
-        "marketGroupID": 1336.0,
-        "iconID": 2038.0,
+        "marketGroupID": 1336,
+        "iconID": 2038,
         "level": 3,
         "iconFile": "/ui/texture/icons/34_64_6.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "2329": 10,
             "2463": 10
         }
@@ -970,12 +970,12 @@
     "15317": {
         "groupID": 1034,
         "typeName": "Genetically Enhanced Livestock",
-        "marketGroupID": 1335.0,
-        "iconID": 2551.0,
+        "marketGroupID": 1335,
+        "iconID": 2551,
         "level": 2,
         "iconFile": "/ui/texture/icons/43_64_14.png",
         "unit_size": 5,
-        "components":{
+        "components": {
             "2395": 40,
             "3779": 40
         }
@@ -983,12 +983,12 @@
     "17136": {
         "groupID": 1040,
         "typeName": "Ukomi Superconductors",
-        "marketGroupID": 1336.0,
-        "iconID": 1363.0,
+        "marketGroupID": 1336,
+        "iconID": 1363,
         "level": 3,
         "iconFile": "/ui/texture/icons/24_64_9.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "9398": 10,
             "3691": 10
         }
@@ -996,12 +996,12 @@
     "17392": {
         "groupID": 1040,
         "typeName": "Data Chips",
-        "marketGroupID": 1336.0,
-        "iconID": 2038.0,
+        "marketGroupID": 1336,
+        "iconID": 2038,
         "level": 3,
         "iconFile": "/ui/texture/icons/34_64_6.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "2327": 10,
             "2312": 10
         }
@@ -1009,12 +1009,12 @@
     "17898": {
         "groupID": 1040,
         "typeName": "High-Tech Transmitters",
-        "marketGroupID": 1336.0,
-        "iconID": 1364.0,
+        "marketGroupID": 1336,
+        "iconID": 1364,
         "level": 3,
         "iconFile": "/ui/texture/icons/24_64_10.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "2321": 10,
             "9840": 10
         }
@@ -1022,12 +1022,12 @@
     "28974": {
         "groupID": 1040,
         "typeName": "Vaccines",
-        "marketGroupID": 1336.0,
-        "iconID": 1193.0,
+        "marketGroupID": 1336,
+        "iconID": 1193,
         "level": 3,
         "iconFile": "/ui/texture/icons/11_64_1.png",
         "unit_size": 3,
-        "components":{
+        "components": {
             "3725": 10,
             "3775": 10
         }
