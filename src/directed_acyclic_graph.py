@@ -1,5 +1,6 @@
 from material import Material
 import json
+import pickle
 
 
 def create_material_from_definition(material_id, material_definition):
@@ -13,7 +14,7 @@ def create_material_from_definition(material_id, material_definition):
     group_id = material_definition["marketGroupID"]
     components = material_definition["components"]
 
-    return Material(material_id=material_id, material_name=name, unit_size=unit, icon_id=icon_id, level=level, market_group_id=group_id, components=components)
+    return Material(material_id=material_id, material_name=name, unit_size=unit, icon_id=icon_id, level=level, market_group_id=group_id, component_dict=components)
 
 
 def create_materials_from_file(file_name):
@@ -41,5 +42,12 @@ def topological_sort(dependency_graph):
 
 
 pi_materials = create_materials_from_file("./data/pi_materials.json")
-material_graph = build_dependency_graph(pi_materials)
 
+try:
+    with open('./data/pi_dependency_graph.json') as file:
+        material_graph = json.load(file)
+    
+except FileNotFoundError:
+    material_graph = build_dependency_graph(pi_materials)
+    with open('./data/dependency_graph.json', 'w+') as file:
+        json.dump(material_graph, file)

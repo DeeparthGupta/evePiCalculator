@@ -1,4 +1,4 @@
-material_totals = dict(None)
+material_totals = dict()
 
 
 def add_to_quantity(name, quantity):
