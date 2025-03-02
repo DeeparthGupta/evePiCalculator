@@ -6,4 +6,4 @@ __pycache__
 
 !/data/name_id_map.json
 !/data/pi_materials.json
-!/data/pi_dependency_graph.json
+!/data/dependency_graph.json
