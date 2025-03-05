@@ -1,5 +1,5 @@
-from typing import Dict
 from dataclasses import dataclass
+from typing import Dict
 
 
 @dataclass(frozen=True)
@@ -23,7 +23,7 @@ class Material:
     @property
     def components(self):
         return self.component_dict
-    
+
     @property
     def cycle(self):
         return self.unit_size
