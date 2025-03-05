@@ -1,53 +1,40 @@
-from material import Material
-import json
-import pickle
+import collections
 
 
-def create_material_from_definition(material_id, material_definition):
-    # Creates a material object from given material dictionary
-
-    material_id = material_id
-    name = material_definition["typeName"]
-    unit = material_definition["unit_size"]
-    icon_id = material_definition["iconID"]
-    level = material_definition["level"]
-    group_id = material_definition["marketGroupID"]
-    components = material_definition["components"]
-
-    return Material(material_id=material_id, material_name=name, unit_size=unit, icon_id=icon_id, level=level, market_group_id=group_id, component_dict=components)
-
-
-def create_materials_from_file(file_name):
-    # Creates a dictionary of materials from file containing json formatted data
-
-    with open(file_name, "r", encoding="utf-8") as file:
-        data = json.load(file)
-
-    # Create material objects from file
-    materials = {}
-    for material_id, material_data in data.items():
-        materials[material_id] = create_material_from_definition(material_id, material_data)
-
-    return materials
-
-def build_dependency_graph(materials_dict):
-    dependency_graph = {}
+def build_dependency_map(materials_dict):
+    # Creates a dictionary of components and the materials that need them
+    dependency_map = collections.defaultdict(list)
     for material_id, material_def in materials_dict.items():
-        dependency_graph[material_id] = list(material_def.components.items())
-    
-    return dependency_graph
+        for component_id, _ in material_def.components.items():
+            dependency_map[component_id].append(material_id)
 
-def topological_sort(dependency_graph):
-    pass
+    return dependency_map
 
 
-pi_materials = create_materials_from_file("./data/pi_materials.json")
+def topological_sort(materials_dict):
+    # Topologically sort materials using Kahn's Algorithm
+    in_degree = {
+        material_id: len(material_def.components)
+        for material_id, material_def in materials_dict.items()
+    }
+    queue = collections.deque(
+        [material_id for material_id, degree in in_degree.items() if degree == 0]
+    )
 
-try:
-    with open('./data/pi_dependency_graph.json') as file:
-        material_graph = json.load(file)
-    
-except FileNotFoundError:
-    material_graph = build_dependency_graph(pi_materials)
-    with open('./data/dependency_graph.json', 'w+') as file:
-        json.dump(material_graph, file)
+    dependency_map = build_dependency_map(materials_dict)
+
+    order = list()
+
+    while queue:
+        # Pop an item from the queue and put it in the the order list
+        node = queue.popleft()
+        order.append(node)
+
+        for neighbor in dependency_map[node]:
+            in_degree[neighbor] -= 1
+
+            # If indegree becomes 0 push the item to the queue
+            if in_degree[neighbor] == 0:
+                queue.append(node)
+
+    return order
