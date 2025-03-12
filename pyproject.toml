@@ -8,6 +8,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+    "black>=25.1.0",
     "jupyter>=1.1.1",
     "pandas>=2.2.3",
     "ruff>=0.9.5",
