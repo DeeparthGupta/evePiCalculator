@@ -7,7 +7,7 @@ class Material:
     material_id: str
     material_name: str
     unit_size: int
-    icon_id: str
+    icon_id: int
     level: int
     market_group_id: int
     component_dict: Dict[str, int]
@@ -25,11 +25,10 @@ class Material:
         return self.component_dict
 
     @property
-    def cycle(self):
+    def unit_cycle(self):
         return self.unit_size
 
     def __repr__(self):
         return (
-            f"Material(id={self.material_id}, name={self.material_name}, unit_size={self.unit_size}, "
-            f"components={self.components!r})"
+            f"Material(id={self.material_id}, name={self.material_name}, unit_cycle={self.unit_size}"
         )
