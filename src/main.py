@@ -1,13 +1,16 @@
+from collections import defaultdict, Counter
 from material import Material
 import json
 import pickle
-from directed_acyclic_graph import topological_sort
+from typing import Any, Dict
 
 
 material_totals = dict()
 
 
-def create_material_from_definition(material_id, material_definition):
+def create_material_from_definition(
+    material_id: str, material_definition: dict[str, Any]
+) -> Material:
     # Creates a material object from given material dictionary
 
     material_id = material_id
@@ -29,10 +32,10 @@ def create_material_from_definition(material_id, material_definition):
     )
 
 
-def create_materials_from_file(file_name):
+def create_materials_from_file(file_path: str) -> dict[str, Material]:
     # Creates a dictionary of materials from file containing json formatted data
 
-    with open(file_name, "r", encoding="utf-8") as file:
+    with open(file_path, "r", encoding="utf-8") as file:
         data = json.load(file)
 
     # Create material objects from file
@@ -45,33 +48,38 @@ def create_materials_from_file(file_name):
     return materials
 
 
-def add_to_quantity(name, quantity):
-    # Adds a key value pair if the key doesn't exist and adds to the existing value if it does
+def dict_binary_operation(
+    operation: str, dict1: Dict[str, int], dict2: Dict[str, int]
+) -> Dict[str, int]:
+    match operation:
+        case "add":
+            result = Counter(dict1) + Counter(dict2)
 
-    if name not in material_totals.keys():
-        material_totals[name] = quantity
+        case "sub":
+            _result = Counter(dict1) - Counter(dict2)
+            result = {key: value for key, value in _result.items() if value > 0}
+
+        case _:
+            raise ValueError(f"Unsupported Operation: {operation}")
+
+    return dict(result)
+
+
+def calculate_material_requirements(
+    material: Material, quantity: int, material_map: dict[str, Material]
+) -> Dict[str, int]:
+    accumulator = defaultdict(int)
+    if material.components:
+        for component_id, unit_size in material.components.items():
+            required_components = calculate_material_requirements(
+                material_map[component_id], quantity * unit_size, material_map
+            )
+            accumulator = dict_binary_operation("add", accumulator, required_components)
 
     else:
-        existing_quantity = material_totals[name]
-        material_totals[name] = existing_quantity + quantity
+        accumulator[material.id] += quantity
 
-
-def subtract_from_quantity(name, quantity):
-    if name in material_totals:
-        new_quantity = material_totals[name] - quantity
-
-        if new_quantity < 0:
-            remove_material(name)
-
-        else:
-            material_totals[name] = new_quantity
-
-
-def remove_material(name):
-    # Removes a key value pair from material_totals if it exists
-
-    if name in material_totals:
-        material_totals.pop(name)
+    return accumulator
 
 
 def main():
@@ -83,15 +91,6 @@ def main():
         pi_materials = create_materials_from_file("./data/pi_materials.json")
         with open("./data/pi_materials.pkl", "wb+") as file:
             pickle.dump(pi_materials, file)
-    
-    try:
-        with open("./data/topological_order.json") as file:
-            order = json.load(file)
-        
-    except (FileNotFoundError, IOError):
-        order = topological_sort(pi_materials)
-        with open("./data/topological_order.json") as file:
-            json.dump(order, file)
 
 
 if __name__ == "__main__":
