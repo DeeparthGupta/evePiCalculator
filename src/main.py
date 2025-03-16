@@ -1,7 +1,6 @@
 from collections import defaultdict, Counter
 from material import Material
 import json
-import pickle
 from typing import Any, Dict
 
 
@@ -32,20 +31,27 @@ def create_material_from_definition(
     )
 
 
-def create_materials_from_file(file_path: str) -> dict[str, Material]:
+def create_materials_from_file(file_path: str) -> dict[str, Material] | None:
     # Creates a dictionary of materials from file containing json formatted data
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
 
-    with open(file_path, "r", encoding="utf-8") as file:
-        data = json.load(file)
+    except (FileNotFoundError, IOError, EOFError):
+        print(f"Cannot read file: {file_path}")
+    except json.JSONDecodeError:
+        print(f'Malformed JSON:{file_path}')
+    except Exception as error:
+        print(f"An unexpected error occured:{error}")
+    else:
+        # Create material objects from file
+        materials = {}
+        for material_id, material_data in data.items():
+            materials[material_id] = create_material_from_definition(
+                material_id, material_data
+            )
 
-    # Create material objects from file
-    materials = {}
-    for material_id, material_data in data.items():
-        materials[material_id] = create_material_from_definition(
-            material_id, material_data
-        )
-
-    return materials
+        return materials
 
 
 def dict_binary_operation(
@@ -84,14 +90,12 @@ def calculate_material_requirements(
 
 def main():
     try:
-        with open("./data/pi_materials.pkl", "rb") as file:
-            pi_materials = pickle.load(file)
-
-    except (FileNotFoundError, IOError, EOFError):
+        print('Creating material data.')
         pi_materials = create_materials_from_file("./data/pi_materials.json")
-        with open("./data/pi_materials.pkl", "wb+") as file:
-            pickle.dump(pi_materials, file)
 
+    except Exception:
+        print("Unable to get materials data. Exiting")
+        return
 
 if __name__ == "__main__":
     main()
