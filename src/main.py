@@ -153,7 +153,7 @@ def main():
                 material_requirements = calculate_material_requirements(
                     material_id, quantity, pi_materials
                 )
-                
+
                 output = dict_binary_operation("add", output, material_requirements)
         
             if args.save:
@@ -164,7 +164,7 @@ def main():
                 except Exception as error:
                     print(f'Error saving file: {error}')
             
-            print(output)
+            print(json.dumps(output, indent=2))
 
 if __name__ == "__main__":
     main()
