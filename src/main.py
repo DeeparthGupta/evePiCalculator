@@ -90,6 +90,13 @@ def calculate_material_requirements(
 
     return accumulator
 
+def material_id_to_name(materials: dict[str,int], name_id_map: dict[str,str]) -> dict[str,int]:
+    named_materials = {}
+    for material_id, quantity in materials.items():
+        named_materials[name_id_map[material_id]] = quantity
+    
+    return named_materials
+
 
 def main():
     print("Creating material data.")
@@ -109,6 +116,7 @@ def main():
         dest="file",
         default=None,
     )
+
     arg_parser.add_argument("-s", "--save", type=str, help="Output file")
     arg_parser.add_argument("-n", "--named", action="store_true", help="Specify whether to output material names or IDs.")
     arg_parser.add_argument("input", nargs="?", help="Input string")
@@ -155,7 +163,13 @@ def main():
                 )
 
                 output = dict_binary_operation("add", output, material_requirements)
-        
+
+            if args.named:
+                with open('data/name_id_map.json') as file:
+                    name_id_map = json.load(file)
+
+                output = material_id_to_name(output, name_id_map)
+
             if args.save:
                 try:
                     print('Saving output to file')
