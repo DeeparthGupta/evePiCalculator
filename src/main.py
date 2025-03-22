@@ -3,7 +3,36 @@ import sys
 from material import Material
 import json
 import argparse
-from typing import Any
+from typing import Any, Optional
+
+
+def create_master_data(material_dictionary: dict[str, Any]) -> dict[str, Material]:
+    # Create Master data
+    materials = defaultdict()
+    for material_id, material_data in material_dictionary.items():
+        materials[material_id] = create_material_from_definition(
+            material_id, material_data
+        )
+
+    return materials
+
+
+def calculate_material_requirements(
+    material: str, quantity: int, material_map: dict[str, Material]
+) -> dict[str, int]:
+    accumulator = defaultdict(int)
+    material_definition = material_map[material]
+    if material_definition.components:
+        for component_id, unit_size in material_definition.components.items():
+            required_components = calculate_material_requirements(
+                component_id, quantity * unit_size, material_map
+            )
+            accumulator = dict_binary_operation("add", accumulator, required_components)
+
+    else:
+        accumulator[material_definition.id] += quantity
+
+    return accumulator
 
 
 def create_material_from_definition(
@@ -30,33 +59,6 @@ def create_material_from_definition(
     )
 
 
-def create_materials_from_file(file_path: str) -> dict[str, Material] | None:
-    # Creates a dictionary of materials from file containing json formatted data
-    
-    try:
-        with open(file_path, "r", encoding="utf-8") as file:
-            data = json.load(file)
-
-    except (FileNotFoundError, IOError, EOFError):
-        print(f"Cannot read file: {file_path}")
-        return None
-    except json.JSONDecodeError:
-        print(f"Malformed JSON:{file_path}")
-        return None
-    except Exception as error:
-        print(f"An unexpected error occured:{error}")
-        return None
-    else:
-        # Create material objects from file
-        materials = {}
-        for material_id, material_data in data.items():
-            materials[material_id] = create_material_from_definition(
-                material_id, material_data
-            )
-
-        return materials
-
-
 def dict_binary_operation(
     operation: str, dict1: dict[str, int], dict2: dict[str, int]
 ) -> dict[str, int]:
@@ -74,24 +76,6 @@ def dict_binary_operation(
     return dict(result)
 
 
-def calculate_material_requirements(
-    material: str, quantity: int, material_map: dict[str, Material]
-) -> dict[str, int]:
-    accumulator = defaultdict(int)
-    material_definition = material_map[material]
-    if material_definition.components:
-        for component_id, unit_size in material_definition.components.items():
-            required_components = calculate_material_requirements(
-                component_id, quantity * unit_size, material_map
-            )
-            accumulator = dict_binary_operation("add", accumulator, required_components)
-
-    else:
-        accumulator[material_definition.id] += quantity
-
-    return accumulator
-
-
 def material_id_to_name(
     materials: dict[str, int], name_id_map: dict[str, str]
 ) -> dict[str, int]:
@@ -102,13 +86,28 @@ def material_id_to_name(
     return named_materials
 
 
-def main():
-    print("Creating material data.")
-    pi_materials = create_materials_from_file("./data/pi_materials.json")
-    if pi_materials is None:
-        print("Failed to load material data. Exiting...")
-        sys.exit(1)
+def dict_from_file(file_path: str) -> Optional[dict[Any, Any]]:
+    try:
+        with open(file_path, "r") as file:
+            data = json.load(file)
 
+        if not isinstance(data, dict):
+            raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+    except (IOError, EOFError):
+        print(f"Cannot read the file: {file_path}")
+    except json.JSONDecodeError:
+        print("Malformed JSON")
+    except TypeError as error:
+        print(f"Invalid data format: {error}")
+    except Exception as error:
+        print(f"Unexpected Error occurred: {error}")
+    else:
+        return data
+
+
+def parse_arguments():
     arg_parser = argparse.ArgumentParser(
         description="Process PI materials from file or from a valid json string"
     )
@@ -129,26 +128,29 @@ def main():
     arg_parser.add_argument("-s", "--save", type=str, help="Output file")
     arg_parser.add_argument("input", nargs="?", help="Input string")
 
-    args = arg_parser.parse_args()
+    return arg_parser.parse_args()
+
+
+def main():
+    print("Creating material data.")
+    try:
+        pi_materials = dict_from_file("./data/pi_materials.json")
+        if not pi_materials:
+            raise ValueError("Input data is empty.")
+    except Exception as error:
+        print(f"Unable to load Material data: {error}")
+        print("Exiting...")
+        sys.exit(1)
+    else:
+        master_data = create_master_data(pi_materials)
+
+    args = parse_arguments()
 
     if args.file:
         try:
-            with open(args.file) as file:
-                data = json.load(file)
-
-            if not isinstance(data, dict):
-                raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
-
-        except FileNotFoundError:
-            print(f"File not found: {args.file}")
-        except (IOError, EOFError):
-            print(f"Cannot read the file: {args.file}")
-        except json.JSONDecodeError:
-            print("Malformed JSON")
-        except TypeError as error:
-            print(f"Invalid data format: {error}")
+            data = dict_from_file(args.file)
         except Exception as error:
-            print(f"Unexpected Error occurred: {error}")
+            print(f"An Error has occured: {error}")
 
     else:
         try:
@@ -168,7 +170,7 @@ def main():
             output = defaultdict(int)
             for material_id, quantity in data.items():
                 material_requirements = calculate_material_requirements(
-                    material_id, quantity, pi_materials
+                    material_id, quantity, master_data
                 )
 
                 output = dict_binary_operation("add", output, material_requirements)
