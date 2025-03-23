@@ -176,10 +176,14 @@ def main():
                 output = dict_binary_operation("add", output, material_requirements)
 
             if args.named:
-                with open("data/name_id_map.json") as file:
-                    name_id_map = json.load(file)
-
-                output = material_id_to_name(output, name_id_map)
+                try:
+                    name_id_map = dict_from_file("/data/name_id_map.json")
+                    if not name_id_map:
+                        raise ValueError("Unable to read name-id map.")               
+                except Exception as error: 
+                    print(f"Unable to name materials: {error}")
+                else:
+                    output = material_id_to_name(output, name_id_map)
 
             if args.save:
                 try:
