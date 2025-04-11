@@ -1,9 +1,12 @@
 from collections import defaultdict, Counter
 import sys
+
 from material import Material
 import json
 import argparse
 from typing import Any, Optional
+
+
 
 
 def create_master_data(material_dictionary: dict[str, Any]) -> dict[str, Material]:
@@ -78,12 +81,22 @@ def dict_binary_operation(
 
 def material_id_to_name(
     materials: dict[str, int], name_id_map: dict[str, str]
-) -> dict[str, int]:
-    named_materials = {}
+) -> Optional[dict[str, int]]:
+    materials_dict = defaultdict(int)
     for material_id, quantity in materials.items():
-        named_materials[name_id_map[material_id]] = quantity
+        materials_dict[name_id_map[material_id]] = quantity
 
-    return named_materials
+    return materials_dict
+
+
+def material_name_to_id(
+    materials: dict[str, int], id_name_map: dict[str, str]
+) -> Optional[dict[str, int]]:
+    materials_dict = defaultdict(int)
+    for material_name, quantity in materials.items():
+        materials_dict[id_name_map[material_name]] = quantity
+
+    return materials_dict
 
 
 def dict_from_file(file_path: str) -> Optional[dict[Any, Any]]:
@@ -120,10 +133,18 @@ def parse_arguments():
         default=None,
     )
     arg_parser.add_argument(
-        "-n",
-        "--named",
+        "--named-in",
+        action="store_true",
+        help="Specify whether the input file contains material names or ids",
+        dest="named_in",
+        default=True,
+    )
+    arg_parser.add_argument(
+        "--named-out",
         action="store_true",
         help="Specify whether to output material names or IDs.",
+        dest="named_out",
+        default=True,
     )
     arg_parser.add_argument("-s", "--save", type=str, help="Output file")
     arg_parser.add_argument("input", nargs="?", help="Input string")
@@ -143,6 +164,8 @@ def main():
         sys.exit(1)
     else:
         master_data = create_master_data(pi_materials)
+        name_id_map = dict_from_file('/data/name_id_map.json')
+        id_name_map = dict_from_file('/data/id_name_map.json')
 
     args = parse_arguments()
 
@@ -166,6 +189,7 @@ def main():
         except Exception as error:
             print(f"Unexpected Error occurred: {error}")
 
+
         else:
             output = defaultdict(int)
             for material_id, quantity in data.items():
@@ -175,15 +199,8 @@ def main():
 
                 output = dict_binary_operation("add", output, material_requirements)
 
-            if args.named:
-                try:
-                    name_id_map = dict_from_file("/data/name_id_map.json")
-                    if not name_id_map:
-                        raise ValueError("Unable to read name-id map.")               
-                except Exception as error: 
-                    print(f"Unable to name materials: {error}")
-                else:
-                    output = material_id_to_name(output, name_id_map)
+            if args.named_out:
+                output = material_id_to_name(output, name_id_map)
 
             if args.save:
                 try:
