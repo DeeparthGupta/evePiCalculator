@@ -5,7 +5,8 @@ __pycache__
 
 /data/*
 
+/output
+
 !name_id_map.json
 !pi_materials.json
-!pi_materials.pkl
-!dependency_graph.json
+!id_name_map.json
