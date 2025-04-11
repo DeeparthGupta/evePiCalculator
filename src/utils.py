@@ -1,5 +1,6 @@
 from collections import Counter, defaultdict
-from typing import Optional
+import json
+from typing import Any, Optional
 
 
 def material_id_to_name(
@@ -36,3 +37,23 @@ def dict_binary_operation(
             raise ValueError(f"Unsupported Operation: {operation}")
 
     return dict(result)
+
+def dict_from_file(file_path: str) -> Optional[dict[Any, Any]]:
+    try:
+        with open(file_path, "r") as file:
+            data = json.load(file)
+
+        if not isinstance(data, dict):
+            raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+    except (IOError, EOFError):
+        print(f"Cannot read the file: {file_path}")
+    except json.JSONDecodeError:
+        print("Malformed JSON")
+    except TypeError as error:
+        print(f"Invalid data format: {error}")
+    except Exception as error:
+        print(f"Unexpected Error occurred: {error}")
+    else:
+        return data

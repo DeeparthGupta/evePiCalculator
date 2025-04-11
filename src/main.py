@@ -1,33 +1,10 @@
-from collections import defaultdict
-import sys
-
-import json
 import argparse
-from typing import Any, Optional
+import json
+import sys
+from collections import defaultdict
 
-from materialOps import calculate_material_requirements, create_master_data
-from utils import material_id_to_name, dict_binary_operation
-
-
-def dict_from_file(file_path: str) -> Optional[dict[Any, Any]]:
-    try:
-        with open(file_path, "r") as file:
-            data = json.load(file)
-
-        if not isinstance(data, dict):
-            raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
-    except FileNotFoundError:
-        print(f"File not found: {file_path}")
-    except (IOError, EOFError):
-        print(f"Cannot read the file: {file_path}")
-    except json.JSONDecodeError:
-        print("Malformed JSON")
-    except TypeError as error:
-        print(f"Invalid data format: {error}")
-    except Exception as error:
-        print(f"Unexpected Error occurred: {error}")
-    else:
-        return data
+from material_ops import calculate_material_requirements, create_master_data
+from utils import dict_binary_operation, dict_from_file, material_id_to_name
 
 
 def parse_arguments():
