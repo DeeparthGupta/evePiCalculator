@@ -29,6 +29,4 @@ class Material:
         return self.unit_size
 
     def __repr__(self):
-        return (
-            f"Material(id={self.material_id}, name={self.material_name}, unit_cycle={self.unit_size}"
-        )
+        return f"Material(id={self.material_id}, name={self.material_name}, unit_cycle={self.unit_size}"

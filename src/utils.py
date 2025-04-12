@@ -1,26 +1,7 @@
-from collections import Counter, defaultdict
 import json
+from collections import Counter
 from typing import Any, Optional
 
-
-def material_id_to_name(
-    materials: dict[str, int], name_id_map: dict[str, str]
-) -> Optional[dict[str, int]]:
-    materials_dict = defaultdict(int)
-    for material_id, quantity in materials.items():
-        materials_dict[name_id_map[material_id]] = quantity
-
-    return materials_dict
-
-
-def material_name_to_id(
-    materials: dict[str, int], id_name_map: dict[str, str]
-) -> Optional[dict[str, int]]:
-    materials_dict = defaultdict(int)
-    for material_name, quantity in materials.items():
-        materials_dict[id_name_map[material_name]] = quantity
-
-    return materials_dict
 
 def dict_binary_operation(
     operation: str, dict1: dict[str, int], dict2: dict[str, int]
@@ -37,6 +18,7 @@ def dict_binary_operation(
             raise ValueError(f"Unsupported Operation: {operation}")
 
     return dict(result)
+
 
 def dict_from_file(file_path: str) -> Optional[dict[Any, Any]]:
     try:

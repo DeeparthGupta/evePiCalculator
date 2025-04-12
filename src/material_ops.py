@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Any
+from typing import Any, Optional
 
 from material import Material
 from utils import dict_binary_operation
@@ -56,3 +56,23 @@ def create_material_from_definition(
         market_group_id=group_id,
         component_dict=components,
     )
+
+
+def material_id_to_name(
+    materials: dict[str, int], name_id_map: dict[str, str]
+) -> Optional[dict[str, int]]:
+    materials_dict = defaultdict(int)
+    for material_id, quantity in materials.items():
+        materials_dict[name_id_map[material_id]] = quantity
+
+    return materials_dict
+
+
+def material_name_to_id(
+    materials: dict[str, int], id_name_map: dict[str, str]
+) -> Optional[dict[str, int]]:
+    materials_dict = defaultdict(int)
+    for material_name, quantity in materials.items():
+        materials_dict[id_name_map[material_name]] = quantity
+
+    return materials_dict

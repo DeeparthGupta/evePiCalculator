@@ -3,8 +3,8 @@ import json
 import sys
 from collections import defaultdict
 
-from material_ops import calculate_material_requirements, create_master_data
-from utils import dict_binary_operation, dict_from_file, material_id_to_name
+from material_ops import calculate_material_requirements, create_master_data, material_id_to_name
+from utils import dict_binary_operation, dict_from_file
 
 
 def parse_arguments():
