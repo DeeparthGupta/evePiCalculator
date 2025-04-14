@@ -9,9 +9,7 @@ def create_master_data(material_dictionary: dict[str, Any]) -> dict[str, Materia
     # Create Master data
     materials = defaultdict()
     for material_id, material_data in material_dictionary.items():
-        materials[material_id] = create_material_from_definition(
-            material_id, material_data
-        )
+        materials[material_id] = Material.from_dict(material_id, material_data)
 
     return materials
 
@@ -32,30 +30,6 @@ def calculate_material_requirements(
         accumulator[material_definition.id] += quantity
 
     return accumulator
-
-
-def create_material_from_definition(
-    material_id: str, material_definition: dict[str, Any]
-) -> Material:
-    # Creates a material object from given material dictionary
-
-    material_id = material_id
-    name = material_definition["typeName"]
-    unit = material_definition["unit_size"]
-    icon_id = material_definition["iconID"]
-    level = material_definition["level"]
-    group_id = material_definition["marketGroupID"]
-    components = material_definition["components"]
-
-    return Material(
-        material_id=material_id,
-        material_name=name,
-        unit_size=unit,
-        icon_id=icon_id,
-        level=level,
-        market_group_id=group_id,
-        component_dict=components,
-    )
 
 
 def material_id_to_name(
