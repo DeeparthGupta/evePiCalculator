@@ -89,7 +89,7 @@ def main() -> None:
             except Exception as error:
                 print(f"Unable to process material names: {error}")
             else:
-                data = {name_id_map[k]: v for k, v in data}
+                data = {name_id_map[k]: v for k, v in data.items()}
 
         output = defaultdict(int)
         for material_id, quantity in data.items():
@@ -104,7 +104,7 @@ def main() -> None:
             except Exception as error:
                 print(f"Unable to create material names: {error}")
             else:
-                output = {id_name_map[k]: v for k, v in output}
+                output = {id_name_map[k]: v for k, v in output.items()}
 
         if args.save:
             try:
