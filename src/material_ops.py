@@ -1,11 +1,11 @@
 from collections import defaultdict
-from typing import Any, Optional
+from typing import Any, Dict
 
 from material import Material
 from utils import dict_binary_operation
 
 
-def create_master_data(material_dictionary: dict[str, Any]) -> dict[str, Material]:
+def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Material]:
     # Create Master data
     materials = defaultdict()
     for material_id, material_data in material_dictionary.items():
@@ -15,8 +15,8 @@ def create_master_data(material_dictionary: dict[str, Any]) -> dict[str, Materia
 
 
 def calculate_material_requirements(
-    material: str, quantity: int, material_map: dict[str, Material]
-) -> dict[str, int]:
+    material: str, quantity: int, material_map: Dict[str, Material]
+) -> Dict[str, int]:
     accumulator = defaultdict(int)
     material_definition = material_map[material]
     if material_definition.components:
@@ -33,8 +33,8 @@ def calculate_material_requirements(
 
 
 def material_id_to_name(
-    materials: dict[str, int], name_id_map: dict[str, str]
-) -> Optional[dict[str, int]]:
+    materials: Dict[str, int], name_id_map: Dict[str, str]
+) -> Dict[str, int]:
     materials_dict = defaultdict(int)
     for material_id, quantity in materials.items():
         materials_dict[name_id_map[material_id]] = quantity
@@ -43,8 +43,8 @@ def material_id_to_name(
 
 
 def material_name_to_id(
-    materials: dict[str, int], id_name_map: dict[str, str]
-) -> Optional[dict[str, int]]:
+    materials: Dict[str, int], id_name_map: Dict[str, str]
+) -> Dict[str, int]:
     materials_dict = defaultdict(int)
     for material_name, quantity in materials.items():
         materials_dict[id_name_map[material_name]] = quantity
