@@ -10,7 +10,7 @@ from material_ops import (
 from utils import dict_binary_operation, dict_from_file
 
 
-def parse_arguments():
+def parse_arguments() -> argparse.Namespace:
     arg_parser = argparse.ArgumentParser(
         description="Process PI materials from file or from a valid json string"
     )
