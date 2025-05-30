@@ -3,11 +3,11 @@ import json
 import sys
 from collections import defaultdict
 
-from material_ops import (
+from material_operations import (
     calculate_material_requirements,
     create_master_data,
 )
-from utils import dict_binary_operation, dict_from_file
+from helper_functions import dict_binary_operation, dict_from_file
 
 
 def parse_arguments() -> argparse.Namespace:

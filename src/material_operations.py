@@ -1,8 +1,8 @@
 from collections import defaultdict
 from typing import Any, Dict
 
-from material import Material
-from utils import dict_binary_operation
+from material_model import Material
+from helper_functions import dict_binary_operation
 
 
 def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Material]:
