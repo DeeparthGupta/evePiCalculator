@@ -30,23 +30,3 @@ def calculate_material_requirements(
         accumulator[material_definition.id] += quantity
 
     return accumulator
-
-
-""" def material_id_to_name(
-    materials: Dict[str, int], name_id_map: Dict[str, str]
-) -> Dict[str, int]:
-    materials_dict = defaultdict(int)
-    for material_id, quantity in materials.items():
-        materials_dict[name_id_map[material_id]] = quantity
-
-    return materials_dict
-
-
-def material_name_to_id(
-    materials: Dict[str, int], id_name_map: Dict[str, str]
-) -> Dict[str, int]:
-    materials_dict = defaultdict(int)
-    for material_name, quantity in materials.items():
-        materials_dict[id_name_map[material_name]] = quantity
-
-    return materials_dict """

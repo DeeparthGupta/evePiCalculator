@@ -55,17 +55,19 @@ def main() -> None:
         sys.exit(1)
 
     else:
+        # Creates a dictionary of Material objects
         master_data = create_master_data(pi_materials)
-
+        # Parse commandline arguments
         args = parse_arguments()
 
+        # If source is a file
         if args.file:
             try:
                 data = dict_from_file(args.file)
             except Exception as error:
                 print(f"An Error has occured: {error}")
                 sys.exit(1)
-
+        # Else try to load a dict from terminal
         else:
             try:
                 data = json.loads(args.input)
@@ -83,6 +85,7 @@ def main() -> None:
                 print(f"Unexpected Error occurred: {error}")
                 sys.exit(1)
 
+        # If the input is in material names instead of IDs
         if args.named_in:
             try:
                 name_id_map = dict_from_file("/data/name_id_map.json")
@@ -98,6 +101,7 @@ def main() -> None:
             )
             output = dict_binary_operation("add", output, material_requirements)
 
+        # If the output needs to have material names instead of IDs
         if args.named_out:
             try:
                 id_name_map = dict_from_file("/data/id_name_map.json")
@@ -106,6 +110,7 @@ def main() -> None:
             else:
                 output = {id_name_map[k]: v for k, v in output.items()}
 
+        # Save output to file
         if args.save:
             try:
                 print("Saving output to file")
