@@ -34,11 +34,11 @@ class Material:
     ) -> "Material":
         # Type validation and conversion of fields
         try:
-            material_name = str(material_definition["typeNames"])
+            material_name = str(material_definition["typeName"])
             unit_size = int(material_definition["unit_size"])
             icon_id = str(material_definition["iconID"])
             level = int(material_definition["level"])
-            market_group_id = str(material_definition["marketgroupID"])
+            market_group_id = str(material_definition["marketGroupID"])
 
         except KeyError as error:
             raise KeyError(f"Missing required field: {error.args[0]}") from error
