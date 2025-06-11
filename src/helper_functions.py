@@ -1,7 +1,7 @@
 import json
 from collections import Counter
 from pathlib import Path
-from typing import Any, Dict, Union
+from typing import Any, Dict
 
 
 # Perform operations on values of matching keys between 2 dictionaries
@@ -22,7 +22,7 @@ def dict_binary_operation(
     return dict(result)
 
 
-def dict_from_file(file_path: Union[str, Path]) -> Dict[Any, Any]:
+def dict_from_file(file_path: str | Path) -> Dict[Any, Any]:
     try:
         # Convert to path if file_path is str
         if isinstance(file_path, str):
