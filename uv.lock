@@ -386,8 +386,8 @@ wheels = [
 
 [[package]]
 name = "evepicalculator"
-version = "1.0.1"
-source = { virtual = "." }
+version = "1.1.0"
+source = { editable = "." }
 
 [package.dev-dependencies]
 dev = [
