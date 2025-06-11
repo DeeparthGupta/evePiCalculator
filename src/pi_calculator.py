@@ -1,5 +1,6 @@
 import argparse
 import json
+import pathlib
 import sys
 from collections import defaultdict
 
@@ -9,6 +10,10 @@ from material_operations import (
 )
 from helper_functions import dict_binary_operation, dict_from_file
 
+
+# Paths
+PROJECT_ROOT = pathlib.Path(__file__).parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
 
 # Global variables for data
 master_data = None
@@ -55,7 +60,7 @@ def get_master_data() -> dict | None:
     if not master_data:
         print("Creating material data.")
         try:
-            pi_materials = dict_from_file("./data/pi_materials.json")
+            pi_materials = dict_from_file(DATA_DIR / "pi_materials.json")
             if not pi_materials:
                 raise ValueError("Input data is empty.")
 
@@ -76,7 +81,7 @@ def get_name_id_map() -> dict | None:
 
     if not name_id_map:
         try:
-            name_id_map = dict_from_file("/data/name_id_map.json")
+            name_id_map = dict_from_file(DATA_DIR / "name_id_map.json")
 
         except Exception as exception:
             print(f"Unable to load name to ID mapping: {exception}")
@@ -92,7 +97,7 @@ def get_id_name_map() -> dict | None:
 
     if not id_name_map:
         try:
-            id_name_map = dict_from_file("/data/id_name_map.json")
+            id_name_map = dict_from_file(DATA_DIR / "id_name_map.json")
 
         except Exception as exception:
             print(f"Unable to load ID to name mapping: {exception}")

@@ -1,8 +1,10 @@
 import json
 from collections import Counter
-from typing import Any, Dict
+from pathlib import Path
+from typing import Any, Dict, Union
 
 
+# Perform operations on values of matching keys between 2 dictionaries
 def dict_binary_operation(
     operation: str, dict1: Dict[str, int], dict2: Dict[str, int]
 ) -> Dict[str, int]:
@@ -20,13 +22,24 @@ def dict_binary_operation(
     return dict(result)
 
 
-def dict_from_file(file_path: str) -> Dict[Any, Any]:
+def dict_from_file(file_path: Union[str, Path]) -> Dict[Any, Any]:
     try:
+        # Convert to path if file_path is str
+        if isinstance(file_path, str):
+            file_path = Path(file_path)
+
+        if not file_path.exists():
+            raise FileNotFoundError()
+        if not file_path.is_file():
+            raise ValueError(f"Not a valid path: {file_path}")
+
+        # Read and load json data
         with open(file_path, "r") as file:
             data = json.load(file)
 
         if not isinstance(data, dict):
             raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
+
     except FileNotFoundError:
         print(f"File not found: {file_path}")
         return {}
