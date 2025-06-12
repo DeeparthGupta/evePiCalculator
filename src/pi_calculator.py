@@ -5,8 +5,7 @@ import sys
 from collections import defaultdict
 
 from helper_functions import dict_binary_operation, dict_from_file
-from material_operations import (calculate_material_requirements,
-                                 create_master_data)
+from material_operations import calculate_material_requirements, create_master_data
 
 # Paths
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
@@ -107,7 +106,7 @@ def get_id_name_map() -> dict | None:
 def process_materials(input, named_input=False, named_output=False) -> dict | None:
     # Process input materials
     master_data = get_master_data()
-    name_id_map = get_id_name_map()
+    name_id_map = get_name_id_map()
     id_name_map = get_id_name_map()
 
     if master_data:
