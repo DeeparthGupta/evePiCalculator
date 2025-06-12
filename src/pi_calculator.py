@@ -4,12 +4,9 @@ import pathlib
 import sys
 from collections import defaultdict
 
-from material_operations import (
-    calculate_material_requirements,
-    create_master_data,
-)
 from helper_functions import dict_binary_operation, dict_from_file
-
+from material_operations import (calculate_material_requirements,
+                                 create_master_data)
 
 # Paths
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
@@ -38,14 +35,14 @@ def parse_arguments() -> argparse.Namespace:
         action="store_true",
         help="Specify whether the input file contains material names or ids",
         dest="named_in",
-        default=True,
+        default=False,
     )
     arg_parser.add_argument(
         "--named-out",
         action="store_true",
         help="Specify whether to output material names or IDs.",
         dest="named_out",
-        default=True,
+        default=False,
     )
     arg_parser.add_argument("-s", "--save", type=str, help="Output file")
     arg_parser.add_argument("input", nargs="?", help="Input string")
@@ -153,8 +150,8 @@ def main() -> None:
             if not isinstance(data, dict):
                 raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
 
-        except json.JSONDecodeError:
-            print("Malformed JSON")
+        except json.JSONDecodeError as error:
+            print(f"Malformed JSON: {error.msg}")
             sys.exit(1)
         except TypeError as error:
             print(f"Invalid data format: {error}")
