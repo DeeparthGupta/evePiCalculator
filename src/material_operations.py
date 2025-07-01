@@ -19,6 +19,8 @@ def calculate_material_requirements(
 ) -> Dict[str, int]:
     accumulator = defaultdict(int)
     material_definition = material_map[material]
+    accumulator[material_definition.id] += quantity
+    
     if material_definition.components:
         for component_id, unit_size in material_definition.components.items():
             required_components = calculate_material_requirements(
