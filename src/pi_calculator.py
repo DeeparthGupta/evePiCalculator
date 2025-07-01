@@ -110,7 +110,6 @@ def process_materials(input, named_input=False, named_output=False) -> dict | No
     id_name_map = get_id_name_map()
 
     if master_data:
-
         if named_input and name_id_map:
             input = {name_id_map[k]: v for k, v in input.items()}
 
@@ -131,7 +130,6 @@ def process_materials(input, named_input=False, named_output=False) -> dict | No
 
 
 def main() -> None:
-
     args = parse_arguments()
 
     # If source is a file
