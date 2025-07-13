@@ -14,21 +14,31 @@ def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Materia
     return materials
 
 
+def adjusted_cycles(quantity: int, unit_size: int) -> int:
+    return round(quantity / unit_size)
+
+
+def quantity_from_cycles(cycles: int, unit_size: int) -> int:
+    return cycles * unit_size
+
 def calculate_material_requirements(
-    material: str, quantity: int, material_map: Dict[str, Material]
+    material: str, quantity: int, material_data: Dict[str, Material]
 ) -> Dict[str, int]:
     accumulator = defaultdict(int)
-    material_definition = material_map[material]
+    material_definition = material_data[material]
     accumulator[material_definition.id] += quantity
-    
+
     if material_definition.components:
-        for component_id, unit_size in material_definition.components.items():
+        for (
+            component_id,
+            material_requirement,
+        ) in material_definition.components.items():
             required_components = calculate_material_requirements(
-                component_id, quantity * unit_size, material_map
+                component_id,
+                adjusted_cycles(quantity, material_definition.unit_size) * material_requirement,
+                material_data,
             )
             accumulator = dict_binary_operation("add", accumulator, required_components)
-
-    else:
-        accumulator[material_definition.id] += quantity
+            
 
     return accumulator
