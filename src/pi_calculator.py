@@ -5,7 +5,7 @@ import sys
 from collections import defaultdict
 
 from helper_functions import dict_binary_operation, dict_from_file
-from material_operations import calculate_material_requirements, create_master_data
+from material_operations import adjusted_cycles, calculate_material_requirements, create_master_data
 
 # Paths
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
@@ -41,6 +41,13 @@ def parse_arguments() -> argparse.Namespace:
         action="store_true",
         help="Specify whether to output material names or IDs.",
         dest="named_out",
+        default=False,
+    )
+    arg_parser.add_argument(
+        "--cycles",
+        "-c",
+        dest="calc_cycles",
+        action="store_true",
         default=False,
     )
     arg_parser.add_argument("-s", "--save", type=str, help="Output file")
@@ -103,14 +110,13 @@ def get_id_name_map() -> dict | None:
             return id_name_map
 
 
-def process_materials(input, named_input=False, named_output=False) -> dict | None:
+def process_materials(input, named_input=False, named_output=False, cycles=False) -> dict | None:
     # Process input materials
     master_data = get_master_data()
     name_id_map = get_name_id_map()
     id_name_map = get_id_name_map()
 
     if master_data:
-
         if named_input and name_id_map:
             input = {name_id_map[k]: v for k, v in input.items()}
 
@@ -120,6 +126,9 @@ def process_materials(input, named_input=False, named_output=False) -> dict | No
                 material_id, quantity, master_data
             )
             output = dict_binary_operation("add", output, material_requirements)
+        
+        if cycles:
+            output = {k:adjusted_cycles(v,master_data[k].unit_size) for k,v in output.items()}
 
         if named_output and id_name_map:
             output = {id_name_map[k]: v for k, v in output.items()}
@@ -131,7 +140,6 @@ def process_materials(input, named_input=False, named_output=False) -> dict | No
 
 
 def main() -> None:
-
     args = parse_arguments()
 
     # If source is a file
@@ -159,7 +167,7 @@ def main() -> None:
             print(f"Unexpected Error occurred: {error}")
             sys.exit(1)
 
-    output = process_materials(data, args.named_in, args.named_out)
+    output = process_materials(data, args.named_in, args.named_out, args.calc_cycles)
     if not output:
         print("An Error has occured.")
         sys.exit(1)
