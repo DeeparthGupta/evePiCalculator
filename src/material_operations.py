@@ -21,12 +21,25 @@ def adjusted_cycles(quantity: int, unit_size: int) -> int:
 def quantity_from_cycles(cycles: int, unit_size: int) -> int:
     return cycles * unit_size
 
+
+def level_name(level: int) -> str:
+    level_map = {
+        0: "Raw Materials",
+        1: "Processed Materials",
+        2: "Refined Commodities",
+        3: "Specialized Commodities",
+        4: "Advanced Commodities",
+    }
+
+    return level_map[level]
+
+
 def calculate_material_requirements(
     material: str, quantity: int, material_data: Dict[str, Material]
-) -> Dict[str, int]:
-    accumulator = defaultdict(int)
+) -> Dict[str, Dict[str, int]]:
+    accumulator = defaultdict(lambda: defaultdict(int))
     material_definition = material_data[material]
-    accumulator[material_definition.id] += quantity
+    accumulator[level_name(material_definition.level)][material_definition.id] += quantity
 
     if material_definition.components:
         for (
@@ -39,6 +52,5 @@ def calculate_material_requirements(
                 material_data,
             )
             accumulator = dict_binary_operation("add", accumulator, required_components)
-            
 
     return accumulator
