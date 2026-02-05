@@ -1,7 +1,6 @@
 from collections import defaultdict
 from typing import Any, Dict
 
-from helper_functions import dict_binary_operation
 from material_model import Material
 
 
@@ -37,10 +36,13 @@ def level_name(level: int) -> str:
 def calculate_material_requirements(
     material: str, quantity: int, material_data: Dict[str, Material]
 ) -> Dict[str, Dict[str, int]]:
-    accumulator = defaultdict(lambda: defaultdict(int))
+    accumulator: Dict[str, Dict[str, int]] = {}
     material_definition = material_data[material]
-    accumulator[level_name(material_definition.level)][material_definition.id] += (
-        quantity
+    lvl = level_name(material_definition.level)
+    if lvl not in accumulator:
+        accumulator[lvl] = {}
+    accumulator[lvl][material_definition.id] = (
+        accumulator[lvl].get(material_definition.id, 0) + quantity
     )
 
     if material_definition.components:
@@ -54,6 +56,11 @@ def calculate_material_requirements(
                 * material_requirement,
                 material_data,
             )
-            accumulator = dict_binary_operation("add", accumulator, required_components)
+
+            for lvl, reqs in required_components.items():
+                if lvl not in accumulator:
+                    accumulator[lvl] = {}
+                for mat_id, qty in reqs.items():
+                    accumulator[lvl][mat_id] = accumulator[lvl].get(mat_id, 0) + qty
 
     return accumulator
