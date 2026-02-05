@@ -1,8 +1,8 @@
 from collections import defaultdict
 from typing import Any, Dict
 
-from material_model import Material
 from helper_functions import dict_binary_operation
+from material_model import Material
 
 
 def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Material]:
@@ -39,7 +39,9 @@ def calculate_material_requirements(
 ) -> Dict[str, Dict[str, int]]:
     accumulator = defaultdict(lambda: defaultdict(int))
     material_definition = material_data[material]
-    accumulator[level_name(material_definition.level)][material_definition.id] += quantity
+    accumulator[level_name(material_definition.level)][material_definition.id] += (
+        quantity
+    )
 
     if material_definition.components:
         for (
@@ -48,7 +50,8 @@ def calculate_material_requirements(
         ) in material_definition.components.items():
             required_components = calculate_material_requirements(
                 component_id,
-                adjusted_cycles(quantity, material_definition.unit_size) * material_requirement,
+                adjusted_cycles(quantity, material_definition.unit_size)
+                * material_requirement,
                 material_data,
             )
             accumulator = dict_binary_operation("add", accumulator, required_components)

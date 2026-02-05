@@ -2,10 +2,13 @@ import argparse
 import json
 import pathlib
 import sys
-from collections import defaultdict
 
-from helper_functions import dict_binary_operation, dict_from_file
-from material_operations import adjusted_cycles, calculate_material_requirements, create_master_data
+from helper_functions import dict_from_file
+from material_operations import (
+    adjusted_cycles,
+    calculate_material_requirements,
+    create_master_data,
+)
 
 # Paths
 PROJECT_ROOT = pathlib.Path(__file__).parent.parent
@@ -110,33 +113,48 @@ def get_id_name_map() -> dict | None:
             return id_name_map
 
 
-def process_materials(input, named_input=False, named_output=False, cycles=False) -> dict | None:
+def process_materials(
+    input_data, named_input=False, named_output=False, cycles=False
+) -> dict | None:
     # Process input materials
     master_data = get_master_data()
     name_id_map = get_name_id_map()
     id_name_map = get_id_name_map()
 
-    if master_data:
-        if named_input and name_id_map:
-            input = {name_id_map[k]: v for k, v in input.items()}
-
-        output = defaultdict(int)
-        for material_id, quantity in input.items():
-            material_requirements = calculate_material_requirements(
-                material_id, quantity, master_data
-            )
-            output = dict_binary_operation("add", output, material_requirements)
-        
-        if cycles:
-            output = {k:adjusted_cycles(v,master_data[k].unit_size) for k,v in output.items()}
-
-        if named_output and id_name_map:
-            output = {id_name_map[k]: v for k, v in output.items()}
-
-        return output
-
-    else:
+    if not master_data:
         return None
+
+    if named_input and name_id_map:
+        input_data = {name_id_map[k]: v for k, v in input_data.items()}
+
+    output = {}
+    for material_id, quantity in input_data.items():
+        material_requirements = calculate_material_requirements(
+            material_id, quantity, get_master_data()
+        )
+        for level, requirements in material_requirements.items():
+            if level not in output:
+                output[level] = {}
+            for material_id, quantity in requirements.items():
+                output[level][material_id] = (
+                    output[level].get(material_id, 0) + quantity
+                )
+
+    if cycles:
+        for level, materials in output.items():
+            for material_id in list(materials.keys()):
+                materials[material_id] = adjusted_cycles(
+                    materials[material_id], master_data[material_id].unit_size
+                )
+
+    if named_input and id_name_map:
+        for level, materials in output.items():
+            output[level] = {
+                id_name_map.get(material_id, material_id): quantity
+                for material_id, quantity in materials.items()
+            }
+
+    return output
 
 
 def main() -> None:
