@@ -7,6 +7,8 @@ __pycache__
 
 /output
 
+implant_manufacturing*
+
 !name_id_map.json
 !pi_materials.json
 !id_name_map.json

@@ -8,8 +8,16 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "black>=25.1.0",
     "jupyter>=1.1.1",
     "pandas>=2.2.3",
     "ruff>=0.9.5",
 ]
+
+[tool.black]
+line-length = 88
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 88
+extend-select = ["Q"]
+extend-ignore = ["E501"]
