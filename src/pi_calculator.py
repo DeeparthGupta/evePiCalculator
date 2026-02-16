@@ -147,7 +147,7 @@ def process_materials(
                     materials[material_id], master_data[material_id].unit_size
                 )
 
-    if named_input and id_name_map:
+    if named_output and id_name_map:
         for level, materials in output.items():
             output[level] = {
                 id_name_map.get(material_id, material_id): quantity
