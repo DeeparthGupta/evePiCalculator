@@ -26,6 +26,7 @@ Or pass inline JSON:
 
 ```sh
 python src/pi_calculator.py '{"44": 10, "2344": 2}'
+python src/pi_calculator.py '{"Cryoprotectant Solution": 20}'
 ```
 
 ## Options
@@ -36,13 +37,7 @@ python src/pi_calculator.py '{"44": 10, "2344": 2}'
 - `-c, --cycles` : apply batch-size adjustments.
 - `-s FILE` : save output JSON to a file.
 
-## Data Files
-
-- [pi_materials.json](..\data\pi_materials.json) : PI materials and recipes
-- [name_id_map.json](..\data\name_id_map.json) : material name > ID
-- [id_name_map.json](..\data\id_name_map.json): ID > material name
-
-## Improvements
+## Planned Enhancements
 
 - Cache recursive material calculations to avoid repeating the same dependency calculation.
 - Memoize `calculate_material_requirements()` for repeated materials in complex PI chains.
