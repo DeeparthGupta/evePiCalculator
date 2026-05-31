@@ -3,6 +3,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Dict
 
+from errors import DataLoadError
 
 # Perform operations on values of matching keys between 2 dictionaries
 def dict_binary_operation(
@@ -23,37 +24,25 @@ def dict_binary_operation(
 
 
 def dict_from_file(file_path: str | Path) -> Dict[Any, Any]:
+    if isinstance(file_path, str):
+        file_path = Path(file_path)
+
+    if not file_path.exists():
+        raise DataLoadError(f"File not found: {file_path}")
+    if not file_path.is_file():
+        raise DataLoadError(f"Not a valid file path: {file_path}")
+
     try:
-        # Convert to path if file_path is str
-        if isinstance(file_path, str):
-            file_path = Path(file_path)
-
-        if not file_path.exists():
-            raise FileNotFoundError()
-        if not file_path.is_file():
-            raise ValueError(f"Not a valid path: {file_path}")
-
-        # Read and load json data
-        with open(file_path, "r") as file:
+        with open(file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
+    except json.JSONDecodeError as error:
+        raise DataLoadError(f"Malformed JSON in {file_path}: {error.msg}") from error
+    except OSError as error:
+        raise DataLoadError(f"Cannot read file {file_path}: {error}") from error
 
-        if not isinstance(data, dict):
-            raise TypeError(f"Expected a dictionary, got {type(data).__name__}")
+    if not isinstance(data, dict):
+        raise DataLoadError(
+            f"Invalid data format in {file_path}: expected a dictionary, got {type(data).__name__}"
+        )
 
-    except FileNotFoundError:
-        print(f"File not found: {file_path}")
-        return {}
-    except (IOError, EOFError):
-        print(f"Cannot read the file: {file_path}")
-        return {}
-    except json.JSONDecodeError:
-        print("Malformed JSON")
-        return {}
-    except TypeError as error:
-        print(f"Invalid data format: {error}")
-        return {}
-    except Exception as error:
-        print(f"Unexpected Error occurred: {error}")
-        return {}
-    else:
-        return data
+    return data
