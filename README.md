@@ -39,6 +39,6 @@ python src/pi_calculator.py '{"Cryoprotectant Solution": 20}'
 
 ## Planned Enhancements
 
-- Cache recursive material calculations to avoid repeating the same dependency calculation.
-- Memoize `calculate_material_requirements()` for repeated materials in complex PI chains.
-- Reduce repeated cycle and tier lookups to improve performance.
+- Eliminate repeated traversals of the same subtree.
+- Repeated traversals create multiple dependency accumulators of the same structure which are then combined.
+- A better idea is to merge multiple instances of a material and then create a dependency accumulator on the combined value.

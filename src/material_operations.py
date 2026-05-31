@@ -1,4 +1,4 @@
-from collections import defaultdict
+from math import ceil
 from typing import Any, Dict
 
 from material_model import Material
@@ -6,7 +6,7 @@ from material_model import Material
 
 def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Material]:
     # Create Master data
-    materials = defaultdict()
+    materials = dict()
     for material_id, material_data in material_dictionary.items():
         materials[material_id] = Material.from_dict(material_id, material_data)
 
@@ -14,7 +14,7 @@ def create_master_data(material_dictionary: Dict[str, Any]) -> Dict[str, Materia
 
 
 def adjusted_cycles(quantity: int, unit_size: int) -> int:
-    return round(quantity / unit_size)
+    return ceil(quantity / unit_size)
 
 
 def quantity_from_cycles(cycles: int, unit_size: int) -> int:
@@ -30,7 +30,7 @@ def level_name(level: int) -> str:
         4: "Advanced Commodities",
     }
 
-    return level_map[level]
+    return level_map[level] or "Unknown Level"
 
 
 def calculate_material_requirements(

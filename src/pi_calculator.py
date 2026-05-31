@@ -130,14 +130,14 @@ def process_materials(
     output = {}
     for material_id, quantity in input_data.items():
         material_requirements = calculate_material_requirements(
-            material_id, quantity, get_master_data()
+            material_id, quantity, master_data
         )
         for level, requirements in material_requirements.items():
             if level not in output:
                 output[level] = {}
-            for material_id, quantity in requirements.items():
-                output[level][material_id] = (
-                    output[level].get(material_id, 0) + quantity
+            for requirement_id, quantity in requirements.items():
+                output[level][requirement_id] = (
+                    output[level].get(requirement_id, 0) + quantity
                 )
 
     if cycles:
